@@ -1,0 +1,7 @@
+version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
+options: "872552a43df78b6c6c6ceb0b6fd08661"
+build_time: [1515318959, 688030000]
+inputs:
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/AppDelegate.swift": [1515317603, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/MovieItemTableViewCell.swift": [9223372036, 854775807]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/MoviesFeedViewController.swift": [1515318959, 0]
