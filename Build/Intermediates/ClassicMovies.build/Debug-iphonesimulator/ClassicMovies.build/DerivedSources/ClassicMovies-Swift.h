@@ -173,7 +173,10 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 #endif
 #if __has_feature(modules)
 @import UIKit;
+@import ObjectiveC;
+@import CoreData;
 @import Foundation;
+@import CoreGraphics;
 #endif
 
 #pragma clang diagnostic ignored "-Wproperty-attribute-mismatch"
@@ -200,12 +203,43 @@ SWIFT_CLASS("_TtC13ClassicMovies11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC13ClassicMovies13BaseOperation")
+@interface BaseOperation : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSNumber;
+@class NSEntityDescription;
+@class NSManagedObjectContext;
+
+SWIFT_CLASS("_TtC13ClassicMovies7CMMovie")
+@interface CMMovie : NSManagedObject
+@property (nonatomic, copy) NSString * _Nullable title;
+@property (nonatomic, strong) NSNumber * _Nullable rating;
+@property (nonatomic, strong) id _Nullable reviews;
+@property (nonatomic, copy) NSDate * _Nullable releasDate;
+@property (nonatomic, strong) id _Nullable cast;
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13ClassicMovies21MovieDetailsOperation")
+@interface MovieDetailsOperation : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
+
+SWIFT_CLASS("_TtC13ClassicMovies18MovieFeedOperation")
+@interface MovieFeedOperation : NSObject
+- (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class NSCoder;
 
 SWIFT_CLASS("_TtC13ClassicMovies22MovieItemTableViewCell")
 @interface MovieItemTableViewCell : UITableViewCell
 - (void)awakeFromNib;
-- (void)setSelected:(BOOL)selected animated:(BOOL)animated;
 - (nonnull instancetype)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString * _Nullable)reuseIdentifier OBJC_DESIGNATED_INITIALIZER SWIFT_AVAILABILITY(ios,introduced=3.0);
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)aDecoder OBJC_DESIGNATED_INITIALIZER;
 @end
@@ -228,6 +262,7 @@ SWIFT_CLASS("_TtC13ClassicMovies24MoviesFeedViewController")
 @interface MoviesFeedViewController (SWIFT_EXTENSION(ClassicMovies)) <UITableViewDataSource>
 - (NSInteger)tableView:(UITableView * _Nonnull)tableView numberOfRowsInSection:(NSInteger)section SWIFT_WARN_UNUSED_RESULT;
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
+- (CGFloat)tableView:(UITableView * _Nonnull)tableView heightForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;
 @end
 
 SWIFT_MODULE_NAMESPACE_POP

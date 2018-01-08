@@ -7,4 +7,6 @@ target 'ClassicMovies' do
 
   # Pods for ClassicMovies
 pod 'PureLayout'
+pod 'RestKit', :git=> 'https://github.com/mavericksunny/RestKit.git', :branch=> 'development'
+pod 'AFNetworking'
 end

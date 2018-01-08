@@ -1,0 +1,107 @@
+### Swift dependencies file v0 ###
+provides-top-level:
+- "CMMovie"
+provides-nominal:
+- "13ClassicMovies7CMMovieC"
+provides-member:
+- ["13ClassicMovies7CMMovieC", ""]
+provides-dynamic-lookup:
+- "cast"
+- "rating"
+- "releasDate"
+- "reviews"
+- "title"
+depends-top-level:
+- "AnyObject"
+- "CMMovie"
+- "Date"
+- "NSManagedObject"
+- "NSNumber"
+- "String"
+depends-member:
+- ["13ClassicMovies7CMMovieC", "AnyObject"]
+- ["13ClassicMovies7CMMovieC", "Date"]
+- ["13ClassicMovies7CMMovieC", "NSNumber"]
+- ["13ClassicMovies7CMMovieC", "String"]
+- ["13ClassicMovies7CMMovieC", "cast"]
+- ["13ClassicMovies7CMMovieC", "deinit"]
+- ["13ClassicMovies7CMMovieC", "init"]
+- ["13ClassicMovies7CMMovieC", "rating"]
+- ["13ClassicMovies7CMMovieC", "releasDate"]
+- ["13ClassicMovies7CMMovieC", "reviews"]
+- ["13ClassicMovies7CMMovieC", "title"]
+- !private ["s7CVarArgP", "init"]
+- ["s7CVarArgP", ""]
+- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s28CustomDebugStringConvertibleP", ""]
+- !private ["s23CustomStringConvertibleP", "init"]
+- ["s23CustomStringConvertibleP", ""]
+- !private ["s9EquatableP", "init"]
+- ["s9EquatableP", ""]
+- !private ["s8HashableP", "init"]
+- ["s8HashableP", ""]
+- !private ["So20NSFetchRequestResultP", "init"]
+- ["So20NSFetchRequestResultP", ""]
+- ["So15NSManagedObjectC", "AnyObject"]
+- ["So15NSManagedObjectC", "Date"]
+- ["So15NSManagedObjectC", "NSNumber"]
+- ["So15NSManagedObjectC", "String"]
+- ["So15NSManagedObjectC", "cast"]
+- ["So15NSManagedObjectC", "init"]
+- ["So15NSManagedObjectC", "rating"]
+- ["So15NSManagedObjectC", "releasDate"]
+- ["So15NSManagedObjectC", "reviews"]
+- ["So15NSManagedObjectC", "title"]
+- ["So15NSManagedObjectC", ""]
+- ["So8NSObjectC", "AnyObject"]
+- ["So8NSObjectC", "Date"]
+- ["So8NSObjectC", "NSNumber"]
+- ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "cast"]
+- ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "rating"]
+- ["So8NSObjectC", "releasDate"]
+- ["So8NSObjectC", "reviews"]
+- ["So8NSObjectC", "title"]
+- !private ["So16NSObjectProtocolP", "init"]
+- ["So16NSObjectProtocolP", ""]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["10Foundation27_KeyValueCodingAndObservingP", ""]
+depends-nominal:
+- "13ClassicMovies7CMMovieC"
+- "s7CVarArgP"
+- "s28CustomDebugStringConvertibleP"
+- "s23CustomStringConvertibleP"
+- "s9EquatableP"
+- "s8HashableP"
+- "So20NSFetchRequestResultP"
+- "So15NSManagedObjectC"
+- "So8NSObjectC"
+- "So16NSObjectProtocolP"
+- "10Foundation27_KeyValueCodingAndObservingP"
+depends-dynamic-lookup:
+depends-external:
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreData.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreImage.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/QuartzCore.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Metal.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Darwin.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Foundation.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreFoundation.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/CoreGraphics.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
+- "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayout-umbrella.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayout+Internal.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/Bridging-header.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayoutDefines.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/NSLayoutConstraint+PureLayout.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/ALView+PureLayout.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/NSArray+PureLayout.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayout.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Modules/module.modulemap"
+interface-hash: "0e894f1c0985c5171590ba81ed23307f"

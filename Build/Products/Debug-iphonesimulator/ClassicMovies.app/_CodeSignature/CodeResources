@@ -4,6 +4,10 @@
 <dict>
 	<key>files</key>
 	<dict>
+		<key>Assets.car</key>
+		<data>
+		GyBFg4N2/+O3MqHmVoyD3BEvhgI=
+		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
 		GhWBtV2rvbmORjVW991BvM6lhNg=
@@ -18,11 +22,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/objects-11.0+.nib</key>
 		<data>
-		qcs3tgt7ELhhQklE4J7f2qBLuHY=
+		arofoEl4w6TDVvt6UbSQESQQUVg=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib</key>
 		<data>
-		okM9VNCvtjmNLjkuKJBTvN12RjY=
+		DuyyiwZaQ3/n4GOpro0+N0q5rNM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,11 +34,11 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/objects-11.0+.nib</key>
 		<data>
-		DnXk7gRIf/8pbtBTZWzHDrmw0lg=
+		Rpl2ONGG9JHOSMnM18z3uBLdSXU=
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib</key>
 		<data>
-		cti1RkCQXXN4k+cWtoMLwHDfKdE=
+		Jq0GXsxZnUP0ANMkDS+ZwGiHmp0=
 		</data>
 		<key>ClassicMovies.momd/ClassicMovies.mom</key>
 		<data>
@@ -47,6 +51,18 @@
 		<key>ClassicMovies.momd/VersionInfo.plist</key>
 		<data>
 		/SLQmrPMHlxIB+xTC8nEQX8pcyI=
+		</data>
+		<key>Frameworks/PureLayout.framework/Info.plist</key>
+		<data>
+		xGGcO9ZyfW1NKYmg9WOhjFR2QCs=
+		</data>
+		<key>Frameworks/PureLayout.framework/PureLayout</key>
+		<data>
+		FiyW8kJTN67rqBAooHzkmiZR/Ps=
+		</data>
+		<key>Frameworks/PureLayout.framework/_CodeSignature/CodeResources</key>
+		<data>
+		WQwFQVhRgqmfQ+BR9t/eX7cEjg4=
 		</data>
 		<key>Frameworks/libswiftCore.dylib</key>
 		<data>
@@ -108,6 +124,10 @@
 		<data>
 		NwQDifQ92WO/Z2DwJteFztO2OOE=
 		</data>
+		<key>MovieItemTableViewCell.nib</key>
+		<data>
+		oUbPgjjlDH/A0n+kN79QqrL/xK8=
+		</data>
 		<key>PkgInfo</key>
 		<data>
 		n57qDP4tZfLD1rCS43W0B4LQjzE=
@@ -119,6 +139,17 @@
 	</dict>
 	<key>files2</key>
 	<dict>
+		<key>Assets.car</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			GyBFg4N2/+O3MqHmVoyD3BEvhgI=
+			</data>
+			<key>hash2</key>
+			<data>
+			0caCElTS2HnPoDlGdGlBL9HlxnhMB2jfwTPHxxPfo5U=
+			</data>
+		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<dict>
 			<key>hash</key>
@@ -156,22 +187,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			qcs3tgt7ELhhQklE4J7f2qBLuHY=
+			arofoEl4w6TDVvt6UbSQESQQUVg=
 			</data>
 			<key>hash2</key>
 			<data>
-			L6U57Yp4ETFa6J+1TUAartODHy6l2TYVhpbxVwpyLSk=
+			mdLgAwT155Jmp5m7zHELmGcDgNT4au5aWeMEwZrtlpE=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			okM9VNCvtjmNLjkuKJBTvN12RjY=
+			DuyyiwZaQ3/n4GOpro0+N0q5rNM=
 			</data>
 			<key>hash2</key>
 			<data>
-			UP6C0iGWdQeWvrJjmDs4t5dlVqbXcXwMITLNfYjRiWE=
+			R2dSe3q1cM+wJdML/uxmCnizp6B8WlBSm3QzrLwEKik=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -189,22 +220,22 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			DnXk7gRIf/8pbtBTZWzHDrmw0lg=
+			Rpl2ONGG9JHOSMnM18z3uBLdSXU=
 			</data>
 			<key>hash2</key>
 			<data>
-			hYS1CqWsProquhpy8Vn1Kbfb7z1xH+4XMGS/foYyhW4=
+			XO+GlbB3X3SlZM3c0tiJzUGQh6xFXwLeVXOUhM1UWO8=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib/runtime.nib</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			cti1RkCQXXN4k+cWtoMLwHDfKdE=
+			Jq0GXsxZnUP0ANMkDS+ZwGiHmp0=
 			</data>
 			<key>hash2</key>
 			<data>
-			m9FaFa+1Xj3tTucvQod+vw+rrRrTibTJHq1fUPEO8s0=
+			O1lgrezer3LvTBdB78mJyQliC+WWqVbpsHdutNCJ9KM=
 			</data>
 		</dict>
 		<key>ClassicMovies.momd/ClassicMovies.mom</key>
@@ -238,6 +269,39 @@
 			<key>hash2</key>
 			<data>
 			ZQfmb3vYZGqLUTy1Hb5Dcp/q52HyliMnPMEQiBgSz5o=
+			</data>
+		</dict>
+		<key>Frameworks/PureLayout.framework/Info.plist</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			xGGcO9ZyfW1NKYmg9WOhjFR2QCs=
+			</data>
+			<key>hash2</key>
+			<data>
+			462dOiWNECkr2y5mx+yg2LafPfupOLTeR/Y9Pazu86U=
+			</data>
+		</dict>
+		<key>Frameworks/PureLayout.framework/PureLayout</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			FiyW8kJTN67rqBAooHzkmiZR/Ps=
+			</data>
+			<key>hash2</key>
+			<data>
+			afKv0Gl52Qmy9KEJm0M4lhIt+ns448QwQH+Q/tSDbT4=
+			</data>
+		</dict>
+		<key>Frameworks/PureLayout.framework/_CodeSignature/CodeResources</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			WQwFQVhRgqmfQ+BR9t/eX7cEjg4=
+			</data>
+			<key>hash2</key>
+			<data>
+			eXchjQWHhBeKmcABlhULrzIGKKOd7My0bjlpD2w2WEk=
 			</data>
 		</dict>
 		<key>Frameworks/libswiftCore.dylib</key>
@@ -392,6 +456,17 @@
 			<key>hash2</key>
 			<data>
 			Pmgd25hhD/G9SX75qgOvMkjN3+bw0qJ+b4vz4zikMaY=
+			</data>
+		</dict>
+		<key>MovieItemTableViewCell.nib</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oUbPgjjlDH/A0n+kN79QqrL/xK8=
+			</data>
+			<key>hash2</key>
+			<data>
+			pC1PN9nXBY/t5DAH/A5+GxTj3+yCPWeY+az6A4J/xo4=
 			</data>
 		</dict>
 		<key>libswiftRemoteMirror.dylib</key>
