@@ -12,7 +12,7 @@ struct MovieItemTableViewCellModel {
     var imageUrl: String
     var title: String
     
-    static func createModel(imageUrl: String, title: String) {
+    static func createModel(imageUrl: String, title: String) -> MovieItemTableViewCellModel {
         return MovieItemTableViewCellModel(imageUrl: imageUrl, title: imageUrl)
     }
     
@@ -30,8 +30,8 @@ class MovieItemTableViewCell: UITableViewCell {
 
 extension MovieItemTableViewCell {
     func bindDataModel(model: MovieItemTableViewCellModel) {
-        if let imageUrl = URL(string: imageUrl) {
-            
+        if let imageUrl = URL(string: model.imageUrl) {
+            backdropImageView.
         }
     }
 }

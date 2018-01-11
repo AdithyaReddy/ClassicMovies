@@ -1,6 +1,0 @@
-framework module Pods_ClassicMovies {
-  umbrella header "Pods-ClassicMovies-umbrella.h"
-
-  export *
-  module * { export * }
-}
