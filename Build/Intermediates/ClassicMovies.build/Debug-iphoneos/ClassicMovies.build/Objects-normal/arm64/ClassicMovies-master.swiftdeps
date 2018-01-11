@@ -1,4 +1,15 @@
 version: "Apple Swift version 4.0.2 (swiftlang-900.0.69.2 clang-900.0.38)"
-options: "9a2462ce511411d84257ba597e692022"
-build_time: [1515436173, 26694000]
+options: "540454befb6148f367858fd6a55112cb"
+build_time: [1515593320, 128400000]
 inputs:
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/Model/CMMovie.swift": [1515593105, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/NetworkLayer/MovieDetailsOperationProtocol.swift": [1515437580, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/AppDelegate.swift": [1515592797, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/NetworkLayer/MovieFeedOperationProtocol.swift": [1515357045, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/NetworkLayer/BaseOperation.swift": [1515592858, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/NetworkLayer/MovieDetailsOperation.swift": [1515437179, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/View/MovieItemTableViewCell.swift": [1515319398, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/Model/CMFeed.swift": [1515593319, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/NetworkLayer/MovieFeedOperation.swift": [1515592402, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/Constants/Constants.swift": [1515438301, 0]
+  "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/Controller/MoviesFeedViewController.swift": [1515437642, 0]

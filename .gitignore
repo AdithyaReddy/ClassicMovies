@@ -1,0 +1,43 @@
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# http://guides.cocoapods.org/using/using-cocoapods.html#should-i-ignore-the-pods-directory-in-source-control?
+#
+Pods/
+Carthage/
+fastlane/
+Successful builds/
+README.md
+report.xml
+
+# Mac Journalized Files
+.DS_Store
+.Trashes
+*.swp
+*.lock
+
+# Xcode temporary files that should never be committed
+User Data/
+*~.nib
+DerivedData/
+Build/
+xcuserdata
+*.moved-aside
+*.pbxuser
+*.mode1v3
+*.mode2v3
+*.perspectivev3
+
+# Whitelist the default ones, some projects need to use these
+!default.pbxuser
+!default.mode1v3
+!default.mode2v3
+!default.perspectivev3
+
+# AppCode IDE
+.idea
+
+# Should not be modified. 
+UCCustomer/UrlConfig.plist
+

@@ -16,6 +16,9 @@ PODS:
     - AFNetworking/NSURLSession
   - ISO8601DateFormatterValueTransformer (0.6.1):
     - RKValueTransformers (~> 1.1.0)
+  - MagicalRecord (2.3.2):
+    - MagicalRecord/Core (= 2.3.2)
+  - MagicalRecord/Core (2.3.2)
   - PureLayout (3.0.2)
   - RestKit (0.27.0):
     - RestKit/Core (= 0.27.0)
@@ -41,6 +44,7 @@ PODS:
 
 DEPENDENCIES:
   - AFNetworking
+  - MagicalRecord
   - PureLayout
   - RestKit (from `https://github.com/mavericksunny/RestKit.git`, branch `development`)
 
@@ -57,12 +61,13 @@ CHECKOUT OPTIONS:
 SPEC CHECKSUMS:
   AFNetworking: 5e0e199f73d8626b11e79750991f5d173d1f8b67
   ISO8601DateFormatterValueTransformer: 52da467d6ec899d6aedda8e48280ac92e8ee97e6
+  MagicalRecord: 53bed74b4323b930992a725be713e53b37d19755
   PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
   RestKit: a0244db34e14ed9cf059fcee2be6733cc162c34a
   RKValueTransformers: e5ed67e3811229b616fe01bddeeafe3bb337b1b9
   SOCKit: c7376ac262bea9115b8f749358f762522a47d392
   TransitionKit: 9ceccda4cd0cdc0a05ef85eb235e5a3292c3c250
 
-PODFILE CHECKSUM: c5c266d5f03d9ed654b8c86ee7017c36e7746dfa
+PODFILE CHECKSUM: 19e9c440921dcd7d487ee3556a23e398f567fc8f
 
 COCOAPODS: 1.2.1

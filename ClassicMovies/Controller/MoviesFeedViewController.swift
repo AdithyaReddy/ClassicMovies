@@ -19,9 +19,28 @@ class MoviesFeedViewController: UIViewController {
         return tableView
     }()
     
+    fileprivate lazy var movieFeedOperation: MovieFeedOperationProtocol? = {
+       let movieFeedOperation = MovieFeedOperation()
+        return movieFeedOperation
+    }()
+    
+    fileprivate var feed: CMFeed?
+    fileprivate var dataSource: [CMMovie]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         registerXIBs()
+        fetchFeed()
+    }
+    
+    func fetchFeed() {
+        movieFeedOperation?.getMovieFeed(onSuccess: { [weak self] (feed) in
+            self?.feed = feed
+            self?.dataSource = feed.results?.allObjects
+            self?.moviesListTableView.reloadData()
+            }, onError: { (error, statusCode) in
+                print(error)
+        })
     }
     
     func registerXIBs() {
@@ -36,7 +55,7 @@ extension MoviesFeedViewController: UITableViewDelegate {
 
 extension MoviesFeedViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 100
+        return dataSource?.count ?? 0
     }
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         if let cell = tableView.dequeueReusableCell(withIdentifier: "MovieItemTableViewCell") as? MovieItemTableViewCell {

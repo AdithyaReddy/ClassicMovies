@@ -11,5 +11,9 @@
 
 
 @import PureLayout;
+@import AFNetworking;
+@import CoreData;
+@import RestKit;
+@import MagicalRecord;
 
 #endif /* Bridging_header_h */

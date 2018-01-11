@@ -9,5 +9,5 @@
 import UIKit
 
 protocol MovieFeedOperationProtocol {
-    func getMovieFeed(onSuccess successBlock:@escaping (()-> Void), onError errorBlock:@escaping ((NSError, _ statusCode : Int)-> Void))
+    func getMovieFeed(onSuccess successBlock:@escaping ((_ feed: CMFeed)-> Void), onError errorBlock:@escaping ((NSError, _ statusCode : Int)-> Void))
 }

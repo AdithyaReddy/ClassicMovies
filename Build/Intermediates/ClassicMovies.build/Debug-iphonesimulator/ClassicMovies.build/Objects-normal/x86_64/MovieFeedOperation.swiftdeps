@@ -7,38 +7,450 @@ provides-member:
 - ["13ClassicMovies18MovieFeedOperationC", ""]
 provides-dynamic-lookup:
 depends-top-level:
+- !private "AnyObject"
+- "AssignmentPrecedence"
+- "BaseOperation"
+- !private "CMFeed"
+- !private "CMMovie"
+- "CastingPrecedence"
+- !private "IndexSet"
+- "Int"
 - "MovieFeedOperation"
-- "NSObject"
+- "MovieFeedOperationProtocol"
+- "NSError"
+- !private "NetworkConstants"
+- "RKObjectRequestOperation"
+- !private "RKRequestMethod"
+- !private "RKResponseDescriptor"
+- "String"
+- "StringLiteralType"
+- !private "URLRequest"
+- "Void"
+- !private "print"
 depends-member:
-- !private ["s7CVarArgP", "init"]
+- !private ["13ClassicMovies13BaseOperationC", "AnyObject"]
+- !private ["13ClassicMovies13BaseOperationC", "CMFeed"]
+- !private ["13ClassicMovies13BaseOperationC", "CMMovie"]
+- !private ["13ClassicMovies13BaseOperationC", "IndexSet"]
+- ["13ClassicMovies13BaseOperationC", "Int"]
+- ["13ClassicMovies13BaseOperationC", "NSError"]
+- !private ["13ClassicMovies13BaseOperationC", "NetworkConstants"]
+- ["13ClassicMovies13BaseOperationC", "RKObjectRequestOperation"]
+- !private ["13ClassicMovies13BaseOperationC", "RKRequestMethod"]
+- !private ["13ClassicMovies13BaseOperationC", "RKResponseDescriptor"]
+- ["13ClassicMovies13BaseOperationC", "String"]
+- !private ["13ClassicMovies13BaseOperationC", "URLRequest"]
+- ["13ClassicMovies13BaseOperationC", "Void"]
+- ["13ClassicMovies13BaseOperationC", "feedOperation"]
+- ["13ClassicMovies13BaseOperationC", "getMovieFeed"]
+- ["13ClassicMovies13BaseOperationC", "init"]
+- !private ["13ClassicMovies13BaseOperationC", "objectManager"]
+- ["13ClassicMovies13BaseOperationC", "path"]
+- !private ["13ClassicMovies13BaseOperationC", "print"]
+- ["13ClassicMovies13BaseOperationC", ""]
+- ["s23BidirectionalCollectionP", "init"]
+- !private ["13ClassicMovies6CMFeedC", "createMapping"]
+- !private ["13ClassicMovies6CMFeedC", "results"]
+- !private ["s7CVarArgP", "AnyObject"]
+- !private ["s7CVarArgP", "CMFeed"]
+- !private ["s7CVarArgP", "IndexSet"]
+- !private ["s7CVarArgP", "NetworkConstants"]
+- !private ["s7CVarArgP", "RKRequestMethod"]
+- !private ["s7CVarArgP", "RKResponseDescriptor"]
+- !private ["s7CVarArgP", "String"]
+- !private ["s7CVarArgP", "addResponseDescriptor"]
+- !private ["s7CVarArgP", "createMapping"]
+- !private ["s7CVarArgP", "enqueue"]
+- !private ["s7CVarArgP", "feedOperation"]
+- !private ["s7CVarArgP", "firstObject"]
+- ["s7CVarArgP", "getMovieFeed"]
+- ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "mainQueueManagedObjectContext"]
+- !private ["s7CVarArgP", "managedObjectRequestOperation"]
+- !private ["s7CVarArgP", "managedObjectStore"]
+- !private ["s7CVarArgP", "objectManager"]
+- !private ["s7CVarArgP", "path"]
+- !private ["s7CVarArgP", "print"]
+- !private ["s7CVarArgP", "queuePriority"]
+- !private ["s7CVarArgP", "request"]
+- !private ["s7CVarArgP", "results"]
+- !private ["s7CVarArgP", "setWillMapDeserializedResponseBlock"]
+- !private ["s7CVarArgP", "subscript"]
 - ["s7CVarArgP", ""]
-- !private ["s28CustomDebugStringConvertibleP", "init"]
+- ["s10CollectionP", "init"]
+- !private ["s10CollectionP", "subscript"]
+- ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "AnyObject"]
+- !private ["s28CustomDebugStringConvertibleP", "CMFeed"]
+- !private ["s28CustomDebugStringConvertibleP", "IndexSet"]
+- !private ["s28CustomDebugStringConvertibleP", "NetworkConstants"]
+- !private ["s28CustomDebugStringConvertibleP", "RKRequestMethod"]
+- !private ["s28CustomDebugStringConvertibleP", "RKResponseDescriptor"]
+- !private ["s28CustomDebugStringConvertibleP", "String"]
+- !private ["s28CustomDebugStringConvertibleP", "addResponseDescriptor"]
+- !private ["s28CustomDebugStringConvertibleP", "createMapping"]
+- !private ["s28CustomDebugStringConvertibleP", "enqueue"]
+- !private ["s28CustomDebugStringConvertibleP", "feedOperation"]
+- !private ["s28CustomDebugStringConvertibleP", "firstObject"]
+- ["s28CustomDebugStringConvertibleP", "getMovieFeed"]
+- ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "mainQueueManagedObjectContext"]
+- !private ["s28CustomDebugStringConvertibleP", "managedObjectRequestOperation"]
+- !private ["s28CustomDebugStringConvertibleP", "managedObjectStore"]
+- !private ["s28CustomDebugStringConvertibleP", "objectManager"]
+- !private ["s28CustomDebugStringConvertibleP", "path"]
+- !private ["s28CustomDebugStringConvertibleP", "print"]
+- !private ["s28CustomDebugStringConvertibleP", "queuePriority"]
+- !private ["s28CustomDebugStringConvertibleP", "request"]
+- !private ["s28CustomDebugStringConvertibleP", "results"]
+- !private ["s28CustomDebugStringConvertibleP", "setWillMapDeserializedResponseBlock"]
+- !private ["s28CustomDebugStringConvertibleP", "subscript"]
 - ["s28CustomDebugStringConvertibleP", ""]
-- !private ["s23CustomStringConvertibleP", "init"]
+- ["s29CustomPlaygroundQuickLookableP", "init"]
+- ["s17CustomReflectableP", "init"]
+- !private ["s17CustomReflectableP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "AnyObject"]
+- !private ["s23CustomStringConvertibleP", "CMFeed"]
+- !private ["s23CustomStringConvertibleP", "IndexSet"]
+- !private ["s23CustomStringConvertibleP", "NetworkConstants"]
+- !private ["s23CustomStringConvertibleP", "RKRequestMethod"]
+- !private ["s23CustomStringConvertibleP", "RKResponseDescriptor"]
+- !private ["s23CustomStringConvertibleP", "String"]
+- !private ["s23CustomStringConvertibleP", "addResponseDescriptor"]
+- !private ["s23CustomStringConvertibleP", "createMapping"]
+- !private ["s23CustomStringConvertibleP", "enqueue"]
+- !private ["s23CustomStringConvertibleP", "feedOperation"]
+- !private ["s23CustomStringConvertibleP", "firstObject"]
+- ["s23CustomStringConvertibleP", "getMovieFeed"]
+- ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "mainQueueManagedObjectContext"]
+- !private ["s23CustomStringConvertibleP", "managedObjectRequestOperation"]
+- !private ["s23CustomStringConvertibleP", "managedObjectStore"]
+- !private ["s23CustomStringConvertibleP", "objectManager"]
+- !private ["s23CustomStringConvertibleP", "path"]
+- !private ["s23CustomStringConvertibleP", "print"]
+- !private ["s23CustomStringConvertibleP", "queuePriority"]
+- !private ["s23CustomStringConvertibleP", "request"]
+- !private ["s23CustomStringConvertibleP", "results"]
+- !private ["s23CustomStringConvertibleP", "setWillMapDeserializedResponseBlock"]
+- !private ["s23CustomStringConvertibleP", "subscript"]
 - ["s23CustomStringConvertibleP", ""]
-- !private ["s9EquatableP", "init"]
+- ["s9DecodableP", "init"]
+- !private ["s9DecodableP", "subscript"]
+- !private ["s10DictionaryV", "init"]
+- !private ["s10DictionaryV", "subscript"]
+- ["s9EncodableP", "init"]
+- !private ["s9EncodableP", "subscript"]
+- !private ["s9EquatableP", "AnyObject"]
+- !private ["s9EquatableP", "CMFeed"]
+- !private ["s9EquatableP", "GET"]
+- !private ["s9EquatableP", "IndexSet"]
+- !private ["s9EquatableP", "NetworkConstants"]
+- !private ["s9EquatableP", "RKRequestMethod"]
+- !private ["s9EquatableP", "RKResponseDescriptor"]
+- !private ["s9EquatableP", "String"]
+- !private ["s9EquatableP", "addResponseDescriptor"]
+- !private ["s9EquatableP", "createMapping"]
+- !private ["s9EquatableP", "enqueue"]
+- !private ["s9EquatableP", "feedOperation"]
+- !private ["s9EquatableP", "firstObject"]
+- ["s9EquatableP", "getMovieFeed"]
+- ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "mainQueueManagedObjectContext"]
+- !private ["s9EquatableP", "managedObjectRequestOperation"]
+- !private ["s9EquatableP", "managedObjectStore"]
+- !private ["s9EquatableP", "objectManager"]
+- !private ["s9EquatableP", "path"]
+- !private ["s9EquatableP", "print"]
+- !private ["s9EquatableP", "queuePriority"]
+- !private ["s9EquatableP", "request"]
+- !private ["s9EquatableP", "results"]
+- !private ["s9EquatableP", "setWillMapDeserializedResponseBlock"]
+- !private ["s9EquatableP", "veryHigh"]
 - ["s9EquatableP", ""]
-- !private ["s8HashableP", "init"]
+- !private ["s25ExpressibleByArrayLiteralP", "GET"]
+- !private ["s25ExpressibleByArrayLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "init"]
+- !private ["s30ExpressibleByDictionaryLiteralP", "subscript"]
+- ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
+- ["s26ExpressibleByStringLiteralP", "init"]
+- ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "AnyObject"]
+- !private ["s8HashableP", "CMFeed"]
+- !private ["s8HashableP", "IndexSet"]
+- !private ["s8HashableP", "NetworkConstants"]
+- !private ["s8HashableP", "RKRequestMethod"]
+- !private ["s8HashableP", "RKResponseDescriptor"]
+- !private ["s8HashableP", "String"]
+- !private ["s8HashableP", "addResponseDescriptor"]
+- !private ["s8HashableP", "createMapping"]
+- !private ["s8HashableP", "enqueue"]
+- !private ["s8HashableP", "feedOperation"]
+- !private ["s8HashableP", "firstObject"]
+- ["s8HashableP", "getMovieFeed"]
+- ["s8HashableP", "init"]
+- !private ["s8HashableP", "mainQueueManagedObjectContext"]
+- !private ["s8HashableP", "managedObjectRequestOperation"]
+- !private ["s8HashableP", "managedObjectStore"]
+- !private ["s8HashableP", "objectManager"]
+- !private ["s8HashableP", "path"]
+- !private ["s8HashableP", "print"]
+- !private ["s8HashableP", "queuePriority"]
+- !private ["s8HashableP", "request"]
+- !private ["s8HashableP", "results"]
+- !private ["s8HashableP", "setWillMapDeserializedResponseBlock"]
+- !private ["s8HashableP", "veryHigh"]
 - ["s8HashableP", ""]
+- !private ["10Foundation8IndexSetV", "init"]
+- ["s25LosslessStringConvertibleP", "init"]
+- !private ["So31MagicalRecordDataImportProtocolP", "createMapping"]
+- !private ["So31MagicalRecordDataImportProtocolP", "results"]
+- ["s10MirrorPathP", "init"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "AnyObject"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "CMFeed"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "CMMovie"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "IndexSet"]
+- ["13ClassicMovies18MovieFeedOperationC", "Int"]
+- ["13ClassicMovies18MovieFeedOperationC", "NSError"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "NetworkConstants"]
+- ["13ClassicMovies18MovieFeedOperationC", "RKObjectRequestOperation"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "RKRequestMethod"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "RKResponseDescriptor"]
+- ["13ClassicMovies18MovieFeedOperationC", "String"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "URLRequest"]
+- ["13ClassicMovies18MovieFeedOperationC", "Void"]
 - ["13ClassicMovies18MovieFeedOperationC", "deinit"]
+- ["13ClassicMovies18MovieFeedOperationC", "feedOperation"]
+- ["13ClassicMovies18MovieFeedOperationC", "getMovieFeed"]
 - ["13ClassicMovies18MovieFeedOperationC", "init"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "objectManager"]
+- ["13ClassicMovies18MovieFeedOperationC", "path"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "print"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "AnyObject"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "CMFeed"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "IndexSet"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "NetworkConstants"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "RKRequestMethod"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "RKResponseDescriptor"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "String"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "feedOperation"]
+- ["13ClassicMovies26MovieFeedOperationProtocolP", "getMovieFeed"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "objectManager"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "path"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "print"]
+- ["13ClassicMovies26MovieFeedOperationProtocolP", ""]
+- ["So8NSCodingP", "init"]
+- ["So9NSCopyingP", "init"]
+- !private ["So9NSCopyingP", "queuePriority"]
+- !private ["So9NSCopyingP", "setWillMapDeserializedResponseBlock"]
+- !private ["So20NSFetchRequestResultP", "createMapping"]
+- !private ["So20NSFetchRequestResultP", "results"]
+- ["So21NSItemProviderReadingP", "init"]
+- ["So21NSItemProviderWritingP", "init"]
+- !private ["So15NSManagedObjectC", "createMapping"]
+- !private ["So15NSManagedObjectC", "results"]
+- ["So16NSMutableCopyingP", "init"]
+- !private ["So8NSObjectC", "AnyObject"]
+- !private ["So8NSObjectC", "CMFeed"]
+- !private ["So8NSObjectC", "CMMovie"]
+- !private ["So8NSObjectC", "IndexSet"]
+- ["So8NSObjectC", "Int"]
+- ["So8NSObjectC", "NSError"]
+- !private ["So8NSObjectC", "NetworkConstants"]
+- ["So8NSObjectC", "RKObjectRequestOperation"]
+- !private ["So8NSObjectC", "RKRequestMethod"]
+- !private ["So8NSObjectC", "RKResponseDescriptor"]
+- ["So8NSObjectC", "String"]
+- !private ["So8NSObjectC", "URLRequest"]
+- ["So8NSObjectC", "Void"]
+- !private ["So8NSObjectC", "addResponseDescriptor"]
+- !private ["So8NSObjectC", "createMapping"]
+- !private ["So8NSObjectC", "enqueue"]
+- ["So8NSObjectC", "feedOperation"]
+- !private ["So8NSObjectC", "firstObject"]
+- ["So8NSObjectC", "getMovieFeed"]
 - ["So8NSObjectC", "init"]
-- ["So8NSObjectC", ""]
-- !private ["So16NSObjectProtocolP", "init"]
+- !private ["So8NSObjectC", "mainQueueManagedObjectContext"]
+- !private ["So8NSObjectC", "managedObjectRequestOperation"]
+- !private ["So8NSObjectC", "managedObjectStore"]
+- !private ["So8NSObjectC", "objectManager"]
+- ["So8NSObjectC", "path"]
+- !private ["So8NSObjectC", "print"]
+- !private ["So8NSObjectC", "queuePriority"]
+- !private ["So8NSObjectC", "request"]
+- !private ["So8NSObjectC", "results"]
+- !private ["So8NSObjectC", "setWillMapDeserializedResponseBlock"]
+- !private ["So16NSObjectProtocolP", "AnyObject"]
+- !private ["So16NSObjectProtocolP", "CMFeed"]
+- !private ["So16NSObjectProtocolP", "IndexSet"]
+- !private ["So16NSObjectProtocolP", "NetworkConstants"]
+- !private ["So16NSObjectProtocolP", "RKRequestMethod"]
+- !private ["So16NSObjectProtocolP", "RKResponseDescriptor"]
+- !private ["So16NSObjectProtocolP", "String"]
+- !private ["So16NSObjectProtocolP", "addResponseDescriptor"]
+- !private ["So16NSObjectProtocolP", "createMapping"]
+- !private ["So16NSObjectProtocolP", "enqueue"]
+- !private ["So16NSObjectProtocolP", "feedOperation"]
+- !private ["So16NSObjectProtocolP", "firstObject"]
+- ["So16NSObjectProtocolP", "getMovieFeed"]
+- ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "mainQueueManagedObjectContext"]
+- !private ["So16NSObjectProtocolP", "managedObjectRequestOperation"]
+- !private ["So16NSObjectProtocolP", "managedObjectStore"]
+- !private ["So16NSObjectProtocolP", "objectManager"]
+- !private ["So16NSObjectProtocolP", "path"]
+- !private ["So16NSObjectProtocolP", "print"]
+- !private ["So16NSObjectProtocolP", "queuePriority"]
+- !private ["So16NSObjectProtocolP", "request"]
+- !private ["So16NSObjectProtocolP", "results"]
+- !private ["So16NSObjectProtocolP", "setWillMapDeserializedResponseBlock"]
 - ["So16NSObjectProtocolP", ""]
-- !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- ["So14NSSecureCodingP", "init"]
+- ["So8NSStringC", "init"]
+- !private ["13ClassicMovies16NetworkConstantsV", "discoverPopularMoviesApiPath"]
+- !private ["13ClassicMovies16NetworkConstantsV", "imdbApiKey"]
+- !private ["So9OperationC", "queuePriority"]
+- !private ["So9OperationC", "setWillMapDeserializedResponseBlock"]
+- !private ["s9OptionSetP", "GET"]
+- !private ["So9OperationC13QueuePriorityO", "veryHigh"]
+- !private ["So20RKManagedObjectStoreC", "mainQueueManagedObjectContext"]
+- !private ["So25RKMapperOperationDelegateP", "queuePriority"]
+- !private ["So25RKMapperOperationDelegateP", "setWillMapDeserializedResponseBlock"]
+- !private ["So15RKMappingResultC", "firstObject"]
+- !private ["So15RKObjectManagerC", "addResponseDescriptor"]
+- !private ["So15RKObjectManagerC", "enqueue"]
+- !private ["So15RKObjectManagerC", "managedObjectRequestOperation"]
+- !private ["So15RKObjectManagerC", "managedObjectStore"]
+- !private ["So15RKObjectManagerC", "request"]
+- !private ["So24RKObjectRequestOperationC", "queuePriority"]
+- !private ["So24RKObjectRequestOperationC", "setWillMapDeserializedResponseBlock"]
+- !private ["SC15RKRequestMethodV", "GET"]
+- !private ["So20RKResponseDescriptorC", "init"]
+- ["s26RangeReplaceableCollectionP", "init"]
+- !private ["s16RawRepresentableP", "GET"]
+- !private ["s16RawRepresentableP", "veryHigh"]
+- !private ["10Foundation20ReferenceConvertibleP", "init"]
+- ["s8SequenceP", "init"]
+- !private ["s8SequenceP", "subscript"]
+- !private ["s10SetAlgebraP", "GET"]
+- !private ["s10SetAlgebraP", "init"]
+- ["SS", "init"]
+- ["s14StringProtocolP", "init"]
+- ["s16TextOutputStreamP", "init"]
+- ["s20TextOutputStreamableP", "init"]
+- ["s23_BidirectionalIndexableP", "init"]
+- ["s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP", "init"]
+- ["s34_ExpressibleByBuiltinStringLiteralP", "init"]
+- ["s39_ExpressibleByBuiltinUTF16StringLiteralP", "init"]
+- ["s41_ExpressibleByBuiltinUnicodeScalarLiteralP", "init"]
+- ["s33_ExpressibleByStringInterpolationP", "init"]
+- ["s35_HasCustomAnyHashableRepresentationP", "init"]
+- ["s10_IndexableP", "init"]
+- !private ["s10_IndexableP", "subscript"]
+- ["s14_IndexableBaseP", "init"]
+- !private ["s14_IndexableBaseP", "subscript"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "AnyObject"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "CMFeed"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "IndexSet"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "NetworkConstants"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "RKRequestMethod"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "RKResponseDescriptor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "String"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "addResponseDescriptor"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "createMapping"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "enqueue"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "feedOperation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "firstObject"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "getMovieFeed"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "mainQueueManagedObjectContext"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "managedObjectRequestOperation"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "managedObjectStore"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "objectManager"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "path"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "print"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "queuePriority"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "request"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "results"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "setWillMapDeserializedResponseBlock"]
 - ["10Foundation27_KeyValueCodingAndObservingP", ""]
+- ["s21_ObjectiveCBridgeableP", "init"]
+- !private ["s21_ObjectiveCBridgeableP", "subscript"]
+- ["s26_RangeReplaceableIndexableP", "init"]
+- ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- "13ClassicMovies13BaseOperationC"
+- "s23BidirectionalCollectionP"
+- !private "13ClassicMovies6CMFeedC"
 - "s7CVarArgP"
+- "s10CollectionP"
+- "s10ComparableP"
 - "s28CustomDebugStringConvertibleP"
+- "s29CustomPlaygroundQuickLookableP"
+- "s17CustomReflectableP"
 - "s23CustomStringConvertibleP"
+- "s9DecodableP"
+- !private "s10DictionaryV"
+- "s9EncodableP"
 - "s9EquatableP"
+- !private "s25ExpressibleByArrayLiteralP"
+- !private "s30ExpressibleByDictionaryLiteralP"
+- "s43ExpressibleByExtendedGraphemeClusterLiteralP"
+- "s26ExpressibleByStringLiteralP"
+- "s33ExpressibleByUnicodeScalarLiteralP"
 - "s8HashableP"
+- !private "10Foundation8IndexSetV"
+- "s25LosslessStringConvertibleP"
+- !private "So31MagicalRecordDataImportProtocolP"
+- "s10MirrorPathP"
 - "13ClassicMovies18MovieFeedOperationC"
+- "13ClassicMovies26MovieFeedOperationProtocolP"
+- "So8NSCodingP"
+- "So9NSCopyingP"
+- !private "So20NSFetchRequestResultP"
+- "So21NSItemProviderReadingP"
+- "So21NSItemProviderWritingP"
+- !private "So15NSManagedObjectC"
+- "So16NSMutableCopyingP"
 - "So8NSObjectC"
 - "So16NSObjectProtocolP"
+- "So14NSSecureCodingP"
+- "So8NSStringC"
+- !private "13ClassicMovies16NetworkConstantsV"
+- !private "So9OperationC"
+- !private "s9OptionSetP"
+- !private "So9OperationC13QueuePriorityO"
+- !private "So20RKManagedObjectStoreC"
+- !private "So25RKMapperOperationDelegateP"
+- !private "So15RKMappingResultC"
+- !private "So15RKObjectManagerC"
+- !private "So24RKObjectRequestOperationC"
+- !private "SC15RKRequestMethodV"
+- !private "So20RKResponseDescriptorC"
+- "s26RangeReplaceableCollectionP"
+- !private "s16RawRepresentableP"
+- !private "10Foundation20ReferenceConvertibleP"
+- "s8SequenceP"
+- !private "s10SetAlgebraP"
+- "SS"
+- "s14StringProtocolP"
+- "s16TextOutputStreamP"
+- "s20TextOutputStreamableP"
+- "s23_BidirectionalIndexableP"
+- "s51_ExpressibleByBuiltinExtendedGraphemeClusterLiteralP"
+- "s34_ExpressibleByBuiltinStringLiteralP"
+- "s39_ExpressibleByBuiltinUTF16StringLiteralP"
+- "s41_ExpressibleByBuiltinUnicodeScalarLiteralP"
+- "s33_ExpressibleByStringInterpolationP"
+- "s35_HasCustomAnyHashableRepresentationP"
+- "s10_IndexableP"
+- "s14_IndexableBaseP"
 - "10Foundation27_KeyValueCodingAndObservingP"
+- "s21_ObjectiveCBridgeableP"
+- "s26_RangeReplaceableIndexableP"
+- "s16_SwiftStringViewP"
 depends-dynamic-lookup:
+- !private "allObjects"
 depends-external:
 - "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Dispatch.apinotesc"
 - "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/ObjectiveC.swiftmodule"
@@ -54,13 +466,149 @@ depends-external:
 - "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/lcl_RK.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/lcl_config_logger_RK.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/lcl_config_extensions_RK.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/lcl_config_components_RK.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord-umbrella.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-umbrella.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RKValueTransformers/RKValueTransformers.framework/Headers/RKValueTransformers-umbrella.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RestKit-umbrella.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayout-umbrella.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPropertyInspector+CoreData.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/CoreData.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSPersistentStore+MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectModel+MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSPersistentStoreCoordinator+MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObject+MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+iCloud.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMappingOperationDataSource.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectMappingOperationDataSource.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKManagedObjectMappingOperationDataSource.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKErrorMessage.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFAutoPurgingImageCache.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKEntityByAttributeCache.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKFetchRequestManagedObjectCache.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKInMemoryManagedObjectCache.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKEntityCache.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKOperationStateMachine.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKManagedObjectStore.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMapperOperation_Private.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRoute.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalChainSave.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalThreading.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecordLogging.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKManagedObjectCaching.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIImage+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIRefreshControl+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIButton+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIKit+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIWebView+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIImageView+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIActivityIndicatorView+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIProgressView+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/UIImageView+AFRKNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+ErrorHandling.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKDynamicMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKAttributeMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRelationshipMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/ObjectMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKEntityMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPropertyMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalObserving.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKLog.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/Network.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayout+Internal.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecordInternal.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObject+MagicalAggregation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMappingOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKURLConnectionOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRelationshipConnectionOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMapperOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKResponseMapperOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKXMLRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKJSONRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKHTTPRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKHTTPRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKImageRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKManagedObjectRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKPropertyListRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKNSJSONSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKURLEncodedSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMIMETypeSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLResponseSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLRequestSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectParameterization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKConnectionDescription.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+Setup.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/Bridging-header.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFImageDownloader.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLSessionManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFHTTPSessionManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworkActivityIndicatorManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKNetworkActivityIndicatorManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworkReachabilityManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectMappingMatcher.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPathMatcher.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKManagedObjectImporter.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKDotNetDateFormatter.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRouter.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKStringTokenizer.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPaginator.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPropertyInspector.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKResponseDescriptor.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRequestDescriptor.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+ShorthandMethods.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKHTTPUtilities.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPathUtilities.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectUtilities.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKDictionaryUtilities.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayoutDefines.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMIMETypes.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalSaves.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+Actions.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalImportFunctions.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/NSManagedObject+RKAdditions.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/NSManagedObjectContext+RKAdditions.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+Options.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMacros.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecordDeprecationMacros.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecordXcode7CompatibilityMacros.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObject+MagicalFinders.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RKValueTransformers/RKValueTransformers.framework/Headers/RKValueTransformers.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKErrors.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMappingErrors.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectRequestOperationSubclass.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObject+MagicalRequests.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRouteSet.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RestKit.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMappingResult.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKHTTPClient.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSString+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSAttributeDescription+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSRelationshipDescription+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSEntityDescription+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSNumber+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSObject+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObject+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/Support.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/NSLayoutConstraint+PureLayout.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/ALView+PureLayout.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/NSArray+PureLayout.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayout.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFSecurityPolicy.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Modules/module.modulemap"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules/module.modulemap"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RKValueTransformers/RKValueTransformers.framework/Modules/module.modulemap"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Modules/module.modulemap"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Modules/module.modulemap"
-interface-hash: "1f92bdc5f0457ddda893ab6e89828b43"
+interface-hash: "045ffe99a610ea4b93cc0bebf2decd7e"

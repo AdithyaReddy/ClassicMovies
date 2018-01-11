@@ -8,11 +8,6 @@
 
 import UIKit
 
-protocol MovieDetailsOperationProtocol {
+internal protocol MovieDetailsOperationProtocol {
     func getMovieCompleteDetails(onSuccess successBlock:@escaping (()-> Void), onError errorBlock:@escaping ((NSError, _ statusCode : Int)-> Void))
-}
-extension MovieFeedOperation: MovieFeedOperationProtocol {
-    func getMovieFeed(onSuccess successBlock: @escaping (() -> Void), onError errorBlock: @escaping ((NSError, Int) -> Void)) {
-        //
-    }
 }

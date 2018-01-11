@@ -8,25 +8,48 @@
 
 import UIKit
 
-class MovieFeedOperation: BaseOperation {
+class MovieFeedOperation: BaseOperation, MovieFeedOperationProtocol {
     
-}
-
-extension MovieFeedOperation: MovieFeedOperationProtocol {
-    func getMovieFeed(onSuccess successBlock: @escaping (() -> Void), onError errorBlock: @escaping ((NSError, Int) -> Void)) {
-        urlPath = ackOperationDelegate?.getBaseUrl() ?? "https://www.urbanclap.com"
-        let manager = super.initSessionManager()
+    var path: String = ""
+    var feedOperation: RKObjectRequestOperation?
+    
+    override init() {
+        super.init()
+        path = "\(NetworkConstants.discoverPopularMoviesApiPath)?api_key=\(NetworkConstants.imdbApiKey)&sort_by=popularity.desc"
         
-        var params: [String: AnyObject] = [String: AnyObject]()
-        params["transaction_id"] = transactionId as AnyObject
+        let feedMapping = CMFeed.createMapping(store: self.objectManager.managedObjectStore)
         
-        manager.post(
-            NetworkingConstants.notificationUrlPath, parameters: params, progress: { (progressValue) in
-            print(progressValue)
-        }, success: { (data, result) in
-            print(result)
-        }) { (data, error) in
-            print(error)
+        let responseDescriptor = RKResponseDescriptor(mapping: feedMapping , method: RKRequestMethod.GET, pathPattern: NetworkConstants.discoverPopularMoviesApiPath, keyPath: "feed", statusCodes: IndexSet(integer: 200))
+        self.objectManager.addResponseDescriptor(responseDescriptor)
+    }
+    
+    func getMovieFeed(onSuccess successBlock: @escaping ((_ feed: CMFeed) -> Void), onError errorBlock: @escaping ((NSError, Int) -> Void)) {
+        
+        let request = self.objectManager.request(with: nil,
+                                                 method: RKRequestMethod.GET, path: self.path, parameters: nil)
+        
+        self.feedOperation = self.objectManager.managedObjectRequestOperation(with: request! as URLRequest,
+            managedObjectContext: self.objectManager.managedObjectStore.mainQueueManagedObjectContext,
+            success: { (operation, result) -> Void in
+            if let feed = result?.firstObject as? CMFeed {
+                if let _ = feed.results?.allObjects as? [CMMovie] {
+                    successBlock(feed)
+                }
+            }
+        }, failure: { (operation, error) -> Void in
+            if let error = error {
+                print(error)
+            }
+        })
+        
+        
+        self.feedOperation?.setWillMapDeserializedResponseBlock { (_object) -> Any? in
+            var finalObject: [String: AnyObject] = [String: AnyObject]()
+            finalObject["feed"] = _object as AnyObject
+            return finalObject
         }
+        self.feedOperation?.queuePriority = .veryHigh
+        self.objectManager.enqueue(self.feedOperation)
+        
     }
 }

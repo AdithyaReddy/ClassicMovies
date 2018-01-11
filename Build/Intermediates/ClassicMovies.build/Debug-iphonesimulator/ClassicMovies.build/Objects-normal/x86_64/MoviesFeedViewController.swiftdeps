@@ -14,6 +14,8 @@ depends-top-level:
 - "CastingPrecedence"
 - "IndexPath"
 - "Int"
+- !private "MovieFeedOperation"
+- "MovieFeedOperationProtocol"
 - !private "MovieItemTableViewCell"
 - "MoviesFeedViewController"
 - !private "StringLiteralType"
@@ -24,6 +26,7 @@ depends-top-level:
 - "UITableViewDelegate"
 - "UIViewController"
 depends-member:
+- !private ["13ClassicMovies13BaseOperationC", "init"]
 - !private ["s23BidirectionalCollectionP", "init"]
 - !private ["Sb", "_getBuiltinLogicValue"]
 - !private ["So15CALayerDelegateP", "addSubview"]
@@ -34,6 +37,7 @@ depends-member:
 - !private ["So15CALayerDelegateP", "init"]
 - !private ["So15CALayerDelegateP", "register"]
 - !private ["SC6CGRectV", "zero"]
+- !private ["s7CVarArgP", "MovieFeedOperation"]
 - !private ["s7CVarArgP", "UINib"]
 - !private ["s7CVarArgP", "UITableView"]
 - !private ["s7CVarArgP", "UITableViewCell"]
@@ -45,6 +49,7 @@ depends-member:
 - ["s7CVarArgP", "indexPathForPreferredFocusedView"]
 - ["s7CVarArgP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s7CVarArgP", "init"]
+- !private ["s7CVarArgP", "movieFeedOperation"]
 - !private ["s7CVarArgP", "moviesListTableView"]
 - ["s7CVarArgP", "numberOfSections"]
 - ["s7CVarArgP", "numberOfSectionsInTableView"]
@@ -73,6 +78,7 @@ depends-member:
 - ["s7CVarArgP", ""]
 - !private ["s10CollectionP", "init"]
 - !private ["s10ComparableP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "MovieFeedOperation"]
 - !private ["s28CustomDebugStringConvertibleP", "UINib"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableView"]
 - !private ["s28CustomDebugStringConvertibleP", "UITableViewCell"]
@@ -84,6 +90,7 @@ depends-member:
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s28CustomDebugStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s28CustomDebugStringConvertibleP", "init"]
+- !private ["s28CustomDebugStringConvertibleP", "movieFeedOperation"]
 - !private ["s28CustomDebugStringConvertibleP", "moviesListTableView"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSections"]
 - ["s28CustomDebugStringConvertibleP", "numberOfSectionsInTableView"]
@@ -117,6 +124,7 @@ depends-member:
 - !private ["s17CustomReflectableP", "_getBuiltinLogicValue"]
 - !private ["s17CustomReflectableP", "init"]
 - !private ["s17CustomReflectableP", "zero"]
+- !private ["s23CustomStringConvertibleP", "MovieFeedOperation"]
 - !private ["s23CustomStringConvertibleP", "UINib"]
 - !private ["s23CustomStringConvertibleP", "UITableView"]
 - !private ["s23CustomStringConvertibleP", "UITableViewCell"]
@@ -129,6 +137,7 @@ depends-member:
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedView"]
 - ["s23CustomStringConvertibleP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s23CustomStringConvertibleP", "init"]
+- !private ["s23CustomStringConvertibleP", "movieFeedOperation"]
 - !private ["s23CustomStringConvertibleP", "moviesListTableView"]
 - ["s23CustomStringConvertibleP", "numberOfSections"]
 - ["s23CustomStringConvertibleP", "numberOfSectionsInTableView"]
@@ -161,6 +170,7 @@ depends-member:
 - !private ["s9EncodableP", "_getBuiltinLogicValue"]
 - !private ["s9EncodableP", "init"]
 - !private ["s9EncodableP", "zero"]
+- !private ["s9EquatableP", "MovieFeedOperation"]
 - !private ["s9EquatableP", "UINib"]
 - !private ["s9EquatableP", "UITableView"]
 - !private ["s9EquatableP", "UITableViewCell"]
@@ -173,6 +183,7 @@ depends-member:
 - ["s9EquatableP", "indexPathForPreferredFocusedView"]
 - ["s9EquatableP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s9EquatableP", "init"]
+- !private ["s9EquatableP", "movieFeedOperation"]
 - !private ["s9EquatableP", "moviesListTableView"]
 - ["s9EquatableP", "numberOfSections"]
 - ["s9EquatableP", "numberOfSectionsInTableView"]
@@ -205,6 +216,7 @@ depends-member:
 - !private ["s43ExpressibleByExtendedGraphemeClusterLiteralP", "init"]
 - !private ["s26ExpressibleByStringLiteralP", "init"]
 - !private ["s33ExpressibleByUnicodeScalarLiteralP", "init"]
+- !private ["s8HashableP", "MovieFeedOperation"]
 - !private ["s8HashableP", "UINib"]
 - !private ["s8HashableP", "UITableView"]
 - !private ["s8HashableP", "UITableViewCell"]
@@ -217,6 +229,7 @@ depends-member:
 - ["s8HashableP", "indexPathForPreferredFocusedView"]
 - ["s8HashableP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["s8HashableP", "init"]
+- !private ["s8HashableP", "movieFeedOperation"]
 - !private ["s8HashableP", "moviesListTableView"]
 - ["s8HashableP", "numberOfSections"]
 - ["s8HashableP", "numberOfSectionsInTableView"]
@@ -247,9 +260,15 @@ depends-member:
 - !private ["s25LosslessStringConvertibleP", "_getBuiltinLogicValue"]
 - !private ["s25LosslessStringConvertibleP", "init"]
 - !private ["s10MirrorPathP", "init"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "deinit"]
+- !private ["13ClassicMovies18MovieFeedOperationC", "init"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "getMovieFeed"]
+- !private ["13ClassicMovies26MovieFeedOperationProtocolP", "init"]
 - ["13ClassicMovies0B18FeedViewControllerC", "CGFloat"]
 - ["13ClassicMovies0B18FeedViewControllerC", "IndexPath"]
 - ["13ClassicMovies0B18FeedViewControllerC", "Int"]
+- !private ["13ClassicMovies0B18FeedViewControllerC", "MovieFeedOperation"]
+- ["13ClassicMovies0B18FeedViewControllerC", "MovieFeedOperationProtocol"]
 - !private ["13ClassicMovies0B18FeedViewControllerC", "MovieItemTableViewCell"]
 - !private ["13ClassicMovies0B18FeedViewControllerC", "UINib"]
 - ["13ClassicMovies0B18FeedViewControllerC", "UITableView"]
@@ -258,6 +277,8 @@ depends-member:
 - ["13ClassicMovies0B18FeedViewControllerC", "indexPathForPreferredFocusedView"]
 - ["13ClassicMovies0B18FeedViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["13ClassicMovies0B18FeedViewControllerC", "init"]
+- !private ["13ClassicMovies0B18FeedViewControllerC", "movieFeedOperation"]
+- !private ["13ClassicMovies0B18FeedViewControllerC", "movieFeedOperation.storage"]
 - !private ["13ClassicMovies0B18FeedViewControllerC", "moviesListTableView"]
 - !private ["13ClassicMovies0B18FeedViewControllerC", "moviesListTableView.storage"]
 - ["13ClassicMovies0B18FeedViewControllerC", "numberOfSections"]
@@ -283,6 +304,7 @@ depends-member:
 - ["13ClassicMovies0B18FeedViewControllerC", "viewDidLoad"]
 - ["13ClassicMovies0B18FeedViewControllerC", "viewForZooming"]
 - ["13ClassicMovies0B18FeedViewControllerC", "viewForZoomingInScrollView"]
+- !private ["So8NSCodingP", "MovieFeedOperation"]
 - !private ["So8NSCodingP", "UINib"]
 - !private ["So8NSCodingP", "UITableView"]
 - !private ["So8NSCodingP", "UITableViewCell"]
@@ -294,6 +316,7 @@ depends-member:
 - ["So8NSCodingP", "indexPathForPreferredFocusedView"]
 - ["So8NSCodingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So8NSCodingP", "init"]
+- !private ["So8NSCodingP", "movieFeedOperation"]
 - !private ["So8NSCodingP", "moviesListTableView"]
 - ["So8NSCodingP", "numberOfSections"]
 - ["So8NSCodingP", "numberOfSectionsInTableView"]
@@ -321,12 +344,14 @@ depends-member:
 - ["So8NSCodingP", "viewForZoomingInScrollView"]
 - ["So8NSCodingP", ""]
 - !private ["So9NSCopyingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "MovieFeedOperation"]
 - !private ["So26NSExtensionRequestHandlingP", "UINib"]
 - !private ["So26NSExtensionRequestHandlingP", "UITableView"]
 - !private ["So26NSExtensionRequestHandlingP", "UITableViewCell"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedView"]
 - ["So26NSExtensionRequestHandlingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So26NSExtensionRequestHandlingP", "init"]
+- !private ["So26NSExtensionRequestHandlingP", "movieFeedOperation"]
 - !private ["So26NSExtensionRequestHandlingP", "moviesListTableView"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSections"]
 - ["So26NSExtensionRequestHandlingP", "numberOfSectionsInTableView"]
@@ -358,6 +383,8 @@ depends-member:
 - ["So8NSObjectC", "CGFloat"]
 - ["So8NSObjectC", "IndexPath"]
 - ["So8NSObjectC", "Int"]
+- !private ["So8NSObjectC", "MovieFeedOperation"]
+- ["So8NSObjectC", "MovieFeedOperationProtocol"]
 - !private ["So8NSObjectC", "MovieItemTableViewCell"]
 - !private ["So8NSObjectC", "UINib"]
 - ["So8NSObjectC", "UITableView"]
@@ -370,6 +397,8 @@ depends-member:
 - ["So8NSObjectC", "indexPathForPreferredFocusedView"]
 - ["So8NSObjectC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So8NSObjectC", "init"]
+- ["So8NSObjectC", "movieFeedOperation"]
+- ["So8NSObjectC", "movieFeedOperation.storage"]
 - ["So8NSObjectC", "moviesListTableView"]
 - ["So8NSObjectC", "moviesListTableView.storage"]
 - ["So8NSObjectC", "numberOfSections"]
@@ -396,6 +425,7 @@ depends-member:
 - ["So8NSObjectC", "viewDidLoad"]
 - ["So8NSObjectC", "viewForZooming"]
 - ["So8NSObjectC", "viewForZoomingInScrollView"]
+- !private ["So16NSObjectProtocolP", "MovieFeedOperation"]
 - !private ["So16NSObjectProtocolP", "UINib"]
 - !private ["So16NSObjectProtocolP", "UITableView"]
 - !private ["So16NSObjectProtocolP", "UITableViewCell"]
@@ -407,6 +437,7 @@ depends-member:
 - ["So16NSObjectProtocolP", "indexPathForPreferredFocusedView"]
 - ["So16NSObjectProtocolP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So16NSObjectProtocolP", "init"]
+- !private ["So16NSObjectProtocolP", "movieFeedOperation"]
 - !private ["So16NSObjectProtocolP", "moviesListTableView"]
 - ["So16NSObjectProtocolP", "numberOfSections"]
 - ["So16NSObjectProtocolP", "numberOfSectionsInTableView"]
@@ -456,6 +487,7 @@ depends-member:
 - !private ["So12UIAppearanceP", "dequeueReusableCell"]
 - !private ["So12UIAppearanceP", "init"]
 - !private ["So12UIAppearanceP", "register"]
+- !private ["So21UIAppearanceContainerP", "MovieFeedOperation"]
 - !private ["So21UIAppearanceContainerP", "UINib"]
 - !private ["So21UIAppearanceContainerP", "UITableView"]
 - !private ["So21UIAppearanceContainerP", "UITableViewCell"]
@@ -467,6 +499,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedView"]
 - ["So21UIAppearanceContainerP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So21UIAppearanceContainerP", "init"]
+- !private ["So21UIAppearanceContainerP", "movieFeedOperation"]
 - !private ["So21UIAppearanceContainerP", "moviesListTableView"]
 - ["So21UIAppearanceContainerP", "numberOfSections"]
 - ["So21UIAppearanceContainerP", "numberOfSectionsInTableView"]
@@ -493,12 +526,14 @@ depends-member:
 - ["So21UIAppearanceContainerP", "viewForZooming"]
 - ["So21UIAppearanceContainerP", "viewForZoomingInScrollView"]
 - ["So21UIAppearanceContainerP", ""]
+- !private ["So18UIContentContainerP", "MovieFeedOperation"]
 - !private ["So18UIContentContainerP", "UINib"]
 - !private ["So18UIContentContainerP", "UITableView"]
 - !private ["So18UIContentContainerP", "UITableViewCell"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedView"]
 - ["So18UIContentContainerP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UIContentContainerP", "init"]
+- !private ["So18UIContentContainerP", "movieFeedOperation"]
 - !private ["So18UIContentContainerP", "moviesListTableView"]
 - ["So18UIContentContainerP", "numberOfSections"]
 - ["So18UIContentContainerP", "numberOfSectionsInTableView"]
@@ -544,6 +579,7 @@ depends-member:
 - !private ["So13UIDynamicItemP", "dequeueReusableCell"]
 - !private ["So13UIDynamicItemP", "init"]
 - !private ["So13UIDynamicItemP", "register"]
+- !private ["So18UIFocusEnvironmentP", "MovieFeedOperation"]
 - !private ["So18UIFocusEnvironmentP", "UINib"]
 - !private ["So18UIFocusEnvironmentP", "UITableView"]
 - !private ["So18UIFocusEnvironmentP", "UITableViewCell"]
@@ -555,6 +591,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UIFocusEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UIFocusEnvironmentP", "init"]
+- !private ["So18UIFocusEnvironmentP", "movieFeedOperation"]
 - !private ["So18UIFocusEnvironmentP", "moviesListTableView"]
 - ["So18UIFocusEnvironmentP", "numberOfSections"]
 - ["So18UIFocusEnvironmentP", "numberOfSectionsInTableView"]
@@ -590,6 +627,7 @@ depends-member:
 - !private ["So11UIFocusItemP", "register"]
 - !private ["So27UIGestureRecognizerDelegateP", "init"]
 - !private ["So5UINibC", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "MovieFeedOperation"]
 - !private ["So30UIPasteConfigurationSupportingP", "UINib"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "UITableViewCell"]
@@ -601,6 +639,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedView"]
 - ["So30UIPasteConfigurationSupportingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So30UIPasteConfigurationSupportingP", "init"]
+- !private ["So30UIPasteConfigurationSupportingP", "movieFeedOperation"]
 - !private ["So30UIPasteConfigurationSupportingP", "moviesListTableView"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSections"]
 - ["So30UIPasteConfigurationSupportingP", "numberOfSectionsInTableView"]
@@ -630,6 +669,8 @@ depends-member:
 - ["So11UIResponderC", "CGFloat"]
 - ["So11UIResponderC", "IndexPath"]
 - ["So11UIResponderC", "Int"]
+- !private ["So11UIResponderC", "MovieFeedOperation"]
+- ["So11UIResponderC", "MovieFeedOperationProtocol"]
 - !private ["So11UIResponderC", "MovieItemTableViewCell"]
 - !private ["So11UIResponderC", "UINib"]
 - ["So11UIResponderC", "UITableView"]
@@ -642,6 +683,8 @@ depends-member:
 - ["So11UIResponderC", "indexPathForPreferredFocusedView"]
 - ["So11UIResponderC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So11UIResponderC", "init"]
+- ["So11UIResponderC", "movieFeedOperation"]
+- ["So11UIResponderC", "movieFeedOperation.storage"]
 - ["So11UIResponderC", "moviesListTableView"]
 - ["So11UIResponderC", "moviesListTableView.storage"]
 - ["So11UIResponderC", "numberOfSections"]
@@ -668,6 +711,7 @@ depends-member:
 - ["So11UIResponderC", "viewDidLoad"]
 - ["So11UIResponderC", "viewForZooming"]
 - ["So11UIResponderC", "viewForZoomingInScrollView"]
+- !private ["So30UIResponderStandardEditActionsP", "MovieFeedOperation"]
 - !private ["So30UIResponderStandardEditActionsP", "UINib"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableView"]
 - !private ["So30UIResponderStandardEditActionsP", "UITableViewCell"]
@@ -679,6 +723,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedView"]
 - ["So30UIResponderStandardEditActionsP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So30UIResponderStandardEditActionsP", "init"]
+- !private ["So30UIResponderStandardEditActionsP", "movieFeedOperation"]
 - !private ["So30UIResponderStandardEditActionsP", "moviesListTableView"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSections"]
 - ["So30UIResponderStandardEditActionsP", "numberOfSectionsInTableView"]
@@ -711,11 +756,13 @@ depends-member:
 - !private ["So12UIScrollViewC", "dequeueReusableCell"]
 - !private ["So12UIScrollViewC", "init"]
 - !private ["So12UIScrollViewC", "register"]
+- !private ["So20UIScrollViewDelegateP", "MovieFeedOperation"]
 - !private ["So20UIScrollViewDelegateP", "UINib"]
 - !private ["So20UIScrollViewDelegateP", "UITableView"]
 - !private ["So20UIScrollViewDelegateP", "UITableViewCell"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So20UIScrollViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So20UIScrollViewDelegateP", "movieFeedOperation"]
 - !private ["So20UIScrollViewDelegateP", "moviesListTableView"]
 - ["So20UIScrollViewDelegateP", "numberOfSections"]
 - ["So20UIScrollViewDelegateP", "numberOfSectionsInTableView"]
@@ -746,12 +793,14 @@ depends-member:
 - !private ["So35UISpringLoadedInteractionSupportingP", "dequeueReusableCell"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "init"]
 - !private ["So35UISpringLoadedInteractionSupportingP", "register"]
+- !private ["So16UIStateRestoringP", "MovieFeedOperation"]
 - !private ["So16UIStateRestoringP", "UINib"]
 - !private ["So16UIStateRestoringP", "UITableView"]
 - !private ["So16UIStateRestoringP", "UITableViewCell"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedView"]
 - ["So16UIStateRestoringP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So16UIStateRestoringP", "init"]
+- !private ["So16UIStateRestoringP", "movieFeedOperation"]
 - !private ["So16UIStateRestoringP", "moviesListTableView"]
 - ["So16UIStateRestoringP", "numberOfSections"]
 - ["So16UIStateRestoringP", "numberOfSectionsInTableView"]
@@ -784,11 +833,13 @@ depends-member:
 - !private ["So11UITableViewC", "init"]
 - !private ["So11UITableViewC", "register"]
 - !private ["So15UITableViewCellC", "init"]
+- !private ["So21UITableViewDataSourceP", "MovieFeedOperation"]
 - !private ["So21UITableViewDataSourceP", "UINib"]
 - !private ["So21UITableViewDataSourceP", "UITableView"]
 - !private ["So21UITableViewDataSourceP", "UITableViewCell"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedView"]
 - ["So21UITableViewDataSourceP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So21UITableViewDataSourceP", "movieFeedOperation"]
 - !private ["So21UITableViewDataSourceP", "moviesListTableView"]
 - ["So21UITableViewDataSourceP", "numberOfSections"]
 - ["So21UITableViewDataSourceP", "numberOfSectionsInTableView"]
@@ -813,11 +864,13 @@ depends-member:
 - ["So21UITableViewDataSourceP", "viewForZooming"]
 - ["So21UITableViewDataSourceP", "viewForZoomingInScrollView"]
 - ["So21UITableViewDataSourceP", ""]
+- !private ["So19UITableViewDelegateP", "MovieFeedOperation"]
 - !private ["So19UITableViewDelegateP", "UINib"]
 - !private ["So19UITableViewDelegateP", "UITableView"]
 - !private ["So19UITableViewDelegateP", "UITableViewCell"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedView"]
 - ["So19UITableViewDelegateP", "indexPathForPreferredFocusedViewInTableView"]
+- !private ["So19UITableViewDelegateP", "movieFeedOperation"]
 - !private ["So19UITableViewDelegateP", "moviesListTableView"]
 - ["So19UITableViewDelegateP", "numberOfSections"]
 - ["So19UITableViewDelegateP", "numberOfSectionsInTableView"]
@@ -843,6 +896,7 @@ depends-member:
 - ["So19UITableViewDelegateP", "viewForZoomingInScrollView"]
 - ["So19UITableViewDelegateP", ""]
 - !private ["SC16UITableViewStyleO", "plain"]
+- !private ["So18UITraitEnvironmentP", "MovieFeedOperation"]
 - !private ["So18UITraitEnvironmentP", "UINib"]
 - !private ["So18UITraitEnvironmentP", "UITableView"]
 - !private ["So18UITraitEnvironmentP", "UITableViewCell"]
@@ -854,6 +908,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedView"]
 - ["So18UITraitEnvironmentP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["So18UITraitEnvironmentP", "init"]
+- !private ["So18UITraitEnvironmentP", "movieFeedOperation"]
 - !private ["So18UITraitEnvironmentP", "moviesListTableView"]
 - ["So18UITraitEnvironmentP", "numberOfSections"]
 - ["So18UITraitEnvironmentP", "numberOfSectionsInTableView"]
@@ -890,6 +945,8 @@ depends-member:
 - ["So16UIViewControllerC", "CGFloat"]
 - ["So16UIViewControllerC", "IndexPath"]
 - ["So16UIViewControllerC", "Int"]
+- !private ["So16UIViewControllerC", "MovieFeedOperation"]
+- ["So16UIViewControllerC", "MovieFeedOperationProtocol"]
 - !private ["So16UIViewControllerC", "MovieItemTableViewCell"]
 - !private ["So16UIViewControllerC", "UINib"]
 - ["So16UIViewControllerC", "UITableView"]
@@ -897,6 +954,8 @@ depends-member:
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedView"]
 - ["So16UIViewControllerC", "indexPathForPreferredFocusedViewInTableView"]
 - ["So16UIViewControllerC", "init"]
+- ["So16UIViewControllerC", "movieFeedOperation"]
+- ["So16UIViewControllerC", "movieFeedOperation.storage"]
 - ["So16UIViewControllerC", "moviesListTableView"]
 - ["So16UIViewControllerC", "moviesListTableView.storage"]
 - ["So16UIViewControllerC", "numberOfSections"]
@@ -940,6 +999,7 @@ depends-member:
 - !private ["s35_HasCustomAnyHashableRepresentationP", "init"]
 - !private ["s10_IndexableP", "init"]
 - !private ["s14_IndexableBaseP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "MovieFeedOperation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UINib"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UITableViewCell"]
@@ -951,6 +1011,7 @@ depends-member:
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "indexPathForPreferredFocusedViewInTableView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "init"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "movieFeedOperation"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "moviesListTableView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSections"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "numberOfSectionsInTableView"]
@@ -983,6 +1044,7 @@ depends-member:
 - !private ["s26_RangeReplaceableIndexableP", "init"]
 - !private ["s16_SwiftStringViewP", "init"]
 depends-nominal:
+- !private "13ClassicMovies13BaseOperationC"
 - !private "s23BidirectionalCollectionP"
 - !private "Sb"
 - !private "So15CALayerDelegateP"
@@ -1004,6 +1066,8 @@ depends-nominal:
 - "s8HashableP"
 - !private "s25LosslessStringConvertibleP"
 - !private "s10MirrorPathP"
+- !private "13ClassicMovies18MovieFeedOperationC"
+- !private "13ClassicMovies26MovieFeedOperationProtocolP"
 - "13ClassicMovies0B18FeedViewControllerC"
 - "So8NSCodingP"
 - !private "So9NSCopyingP"
@@ -1079,13 +1143,149 @@ depends-external:
 - "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/Swift.swiftmodule"
 - "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/UIKit.swiftmodule"
 - "/Users/adithyareddy/Desktop/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/swift/iphonesimulator/x86_64/SwiftOnoneSupport.swiftmodule"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/lcl_RK.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/lcl_config_logger_RK.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/lcl_config_extensions_RK.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/lcl_config_components_RK.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord-umbrella.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-umbrella.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RKValueTransformers/RKValueTransformers.framework/Headers/RKValueTransformers-umbrella.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RestKit-umbrella.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayout-umbrella.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPropertyInspector+CoreData.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/CoreData.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSPersistentStore+MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectModel+MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSPersistentStoreCoordinator+MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObject+MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+iCloud.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMappingOperationDataSource.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectMappingOperationDataSource.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKManagedObjectMappingOperationDataSource.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKErrorMessage.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFAutoPurgingImageCache.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKEntityByAttributeCache.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKFetchRequestManagedObjectCache.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKInMemoryManagedObjectCache.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKEntityCache.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKOperationStateMachine.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKManagedObjectStore.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMapperOperation_Private.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRoute.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalChainSave.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalThreading.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecordLogging.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKManagedObjectCaching.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIImage+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIRefreshControl+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIButton+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIKit+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIWebView+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIImageView+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIActivityIndicatorView+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/UIProgressView+AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/UIImageView+AFRKNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKNetworking.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+ErrorHandling.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKDynamicMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKAttributeMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRelationshipMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/ObjectMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKEntityMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPropertyMapping.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalObserving.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKLog.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/Network.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayout+Internal.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecordInternal.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObject+MagicalAggregation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMappingOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKURLConnectionOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRelationshipConnectionOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMapperOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKResponseMapperOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKXMLRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKJSONRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKHTTPRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKHTTPRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKImageRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKManagedObjectRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKPropertyListRequestOperation.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKNSJSONSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKURLEncodedSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMIMETypeSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLResponseSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLRequestSerialization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectParameterization.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKConnectionDescription.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+Setup.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/ClassicMovies/Bridging-header.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFImageDownloader.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFURLSessionManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFHTTPSessionManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworkActivityIndicatorManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKNetworkActivityIndicatorManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworkReachabilityManager.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectMappingMatcher.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPathMatcher.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKManagedObjectImporter.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKDotNetDateFormatter.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRouter.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKStringTokenizer.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPaginator.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPropertyInspector.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKResponseDescriptor.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRequestDescriptor.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+ShorthandMethods.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKHTTPUtilities.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKPathUtilities.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectUtilities.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKDictionaryUtilities.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayoutDefines.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMIMETypes.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObjectContext+MagicalSaves.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+Actions.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalImportFunctions.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/NSManagedObject+RKAdditions.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/NSManagedObjectContext+RKAdditions.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord+Options.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMacros.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecordDeprecationMacros.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecordXcode7CompatibilityMacros.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObject+MagicalFinders.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RKValueTransformers/RKValueTransformers.framework/Headers/RKValueTransformers.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKErrors.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMappingErrors.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKObjectRequestOperationSubclass.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObject+MagicalRequests.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKRouteSet.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RestKit.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RKMappingResult.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/AFRKHTTPClient.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSString+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSAttributeDescription+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSRelationshipDescription+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSEntityDescription+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSNumber+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSObject+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/NSManagedObject+MagicalDataImport.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/Support.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/NSLayoutConstraint+PureLayout.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/ALView+PureLayout.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/NSArray+PureLayout.h"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayout.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFSecurityPolicy.h"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Modules/module.modulemap"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules/module.modulemap"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RKValueTransformers/RKValueTransformers.framework/Modules/module.modulemap"
+- "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Modules/module.modulemap"
 - "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Modules/module.modulemap"
-interface-hash: "cdc4746f62d7bcc141bdb7a995c5253c"
+interface-hash: "79c5f84167aa34c7bb4a2c9e8ffea726"

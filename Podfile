@@ -9,4 +9,6 @@ target 'ClassicMovies' do
 pod 'PureLayout'
 pod 'RestKit', :git=> 'https://github.com/mavericksunny/RestKit.git', :branch=> 'development'
 pod 'AFNetworking'
+pod 'MagicalRecord'
+pod 'SDWebImage'
 end

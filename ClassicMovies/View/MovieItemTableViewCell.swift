@@ -8,10 +8,30 @@
 
 import UIKit
 
-class MovieItemTableViewCell: UITableViewCell {
+struct MovieItemTableViewCellModel {
+    var imageUrl: String
+    var title: String
+    
+    static func createModel(imageUrl: String, title: String) {
+        return MovieItemTableViewCellModel(imageUrl: imageUrl, title: imageUrl)
+    }
+    
+}
 
+class MovieItemTableViewCell: UITableViewCell {
+    
+    @IBOutlet weak var backdropImageView: UIImageView?
+    @IBOutlet weak var title: UILabel?
+    
     override func awakeFromNib() {
         super.awakeFromNib()
     }
-    
+}
+
+extension MovieItemTableViewCell {
+    func bindDataModel(model: MovieItemTableViewCellModel) {
+        if let imageUrl = URL(string: imageUrl) {
+            
+        }
+    }
 }

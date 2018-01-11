@@ -176,6 +176,7 @@ typedef unsigned int swift_uint4  __attribute__((__ext_vector_type__(4)));
 @import ObjectiveC;
 @import CoreData;
 @import Foundation;
+@import RestKit;
 @import CoreGraphics;
 #endif
 
@@ -213,25 +214,53 @@ SWIFT_CLASS("_TtC13ClassicMovies13BaseOperation")
 @class NSEntityDescription;
 @class NSManagedObjectContext;
 
-SWIFT_CLASS("_TtC13ClassicMovies7CMMovie")
-@interface CMMovie : NSManagedObject
-@property (nonatomic, copy) NSString * _Nullable title;
-@property (nonatomic, strong) NSNumber * _Nullable rating;
-@property (nonatomic, strong) id _Nullable reviews;
-@property (nonatomic, copy) NSDate * _Nullable releasDate;
-@property (nonatomic, strong) id _Nullable cast;
+SWIFT_CLASS_NAMED("CMFeed")
+@interface CMFeed : NSManagedObject
+@property (nonatomic, strong) NSNumber * _Nullable currentPageNumber;
+@property (nonatomic, strong) NSNumber * _Nullable totalResultsCount;
+@property (nonatomic, strong) NSNumber * _Nullable totalPagesCount;
+@property (nonatomic, strong) id _Nullable results;
 - (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class NSDecimalNumber;
+
+SWIFT_CLASS_NAMED("CMMovie")
+@interface CMMovie : NSManagedObject
+@property (nonatomic, strong) NSNumber * _Nullable voteCount;
+@property (nonatomic, copy) NSString * _Nullable id;
+@property (nonatomic, strong) NSDecimalNumber * _Nullable voteAverage;
+@property (nonatomic, copy) NSString * _Nullable title;
+@property (nonatomic, copy) NSString * _Nullable originalTitle;
+@property (nonatomic, strong) NSDecimalNumber * _Nullable popularity;
+@property (nonatomic, copy) NSString * _Nullable posterImagePath;
+@property (nonatomic, copy) NSString * _Nullable originalLang;
+@property (nonatomic, copy) NSString * _Nullable backdropPath;
+@property (nonatomic, strong) NSNumber * _Nullable adult;
+@property (nonatomic, copy) NSString * _Nullable overview;
+@property (nonatomic, copy) NSDate * _Nullable releaseDate;
+- (nonnull instancetype)initWithEntity:(NSEntityDescription * _Nonnull)entity insertIntoManagedObjectContext:(NSManagedObjectContext * _Nullable)context OBJC_DESIGNATED_INITIALIZER;
+@end
+
+@class RKObjectRequestOperation;
+@class RKMappingResult;
+@class AFRKHTTPClient;
+
+SWIFT_CLASS("_TtC13ClassicMovies17CMRKObjectManager")
+@interface CMRKObjectManager : RKObjectManager
+- (void)getObject:(id _Null_unspecified)object path:(NSString * _Null_unspecified)path parameters:(NSDictionary * _Null_unspecified)parameters success:(void (^ _Null_unspecified)(RKObjectRequestOperation * _Nullable, RKMappingResult * _Nullable))success failure:(void (^ _Null_unspecified)(RKObjectRequestOperation * _Nullable, NSError * _Nullable))failure;
+- (null_unspecified instancetype)initWithHTTPClient:(AFRKHTTPClient * _Null_unspecified)client OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC13ClassicMovies21MovieDetailsOperation")
-@interface MovieDetailsOperation : NSObject
+@interface MovieDetailsOperation : BaseOperation
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
 
 SWIFT_CLASS("_TtC13ClassicMovies18MovieFeedOperation")
-@interface MovieFeedOperation : NSObject
+@interface MovieFeedOperation : BaseOperation
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 

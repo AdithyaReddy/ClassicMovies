@@ -23,11 +23,13 @@
 		65BBD7BA2002B82200BDB8B8 /* MovieFeedOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BBD7B92002B82200BDB8B8 /* MovieFeedOperationProtocol.swift */; };
 		65BBD7BC2002B84200BDB8B8 /* MovieDetailsOperationProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BBD7BB2002B84200BDB8B8 /* MovieDetailsOperationProtocol.swift */; };
 		65BBD7BF2002B8BC00BDB8B8 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65BBD7BE2002B8BC00BDB8B8 /* Constants.swift */; };
+		65CC47192004BA730028B50F /* CMFeed.swift in Sources */ = {isa = PBXBuildFile; fileRef = 65CC47182004BA730028B50F /* CMFeed.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		24C7B9BB2CDACD166E3E673E /* Pods-ClassicMovies.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassicMovies.release.xcconfig"; path = "Pods/Target Support Files/Pods-ClassicMovies/Pods-ClassicMovies.release.xcconfig"; sourceTree = "<group>"; };
 		6526DA7120022ACD003AB8C3 /* Bridging-header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Bridging-header.h"; sourceTree = "<group>"; };
+		65502CE82004C97300A03C07 /* ClassicMovies 2.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = "ClassicMovies 2.xcdatamodel"; sourceTree = "<group>"; };
 		65AD2AF7200220E300567F60 /* ClassicMovies.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ClassicMovies.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		65AD2AFA200220E300567F60 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		65AD2AFF200220E300567F60 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -45,6 +47,7 @@
 		65BBD7B92002B82200BDB8B8 /* MovieFeedOperationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieFeedOperationProtocol.swift; sourceTree = "<group>"; };
 		65BBD7BB2002B84200BDB8B8 /* MovieDetailsOperationProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MovieDetailsOperationProtocol.swift; sourceTree = "<group>"; };
 		65BBD7BE2002B8BC00BDB8B8 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		65CC47182004BA730028B50F /* CMFeed.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CMFeed.swift; sourceTree = "<group>"; };
 		78BEF6A308E7746DBE42AED9 /* Pods-ClassicMovies.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ClassicMovies.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ClassicMovies/Pods-ClassicMovies.debug.xcconfig"; sourceTree = "<group>"; };
 		C1FD69BF3CD244281BBDC795 /* Pods_ClassicMovies.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ClassicMovies.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -102,6 +105,7 @@
 			isa = PBXGroup;
 			children = (
 				65BBD7B0200265CE00BDB8B8 /* CMMovie.swift */,
+				65CC47182004BA730028B50F /* CMFeed.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -291,6 +295,7 @@
 				65BBD7B82002678400BDB8B8 /* BaseOperation.swift in Sources */,
 				65BBD7B62002676200BDB8B8 /* MovieDetailsOperation.swift in Sources */,
 				65AD2B132002262E00567F60 /* MovieItemTableViewCell.swift in Sources */,
+				65CC47192004BA730028B50F /* CMFeed.swift in Sources */,
 				65AD2B03200220E300567F60 /* ClassicMovies.xcdatamodeld in Sources */,
 				65BBD7B42002673300BDB8B8 /* MovieFeedOperation.swift in Sources */,
 				65BBD7BF2002B8BC00BDB8B8 /* Constants.swift in Sources */,
@@ -490,9 +495,10 @@
 		65AD2B01200220E300567F60 /* ClassicMovies.xcdatamodeld */ = {
 			isa = XCVersionGroup;
 			children = (
+				65502CE82004C97300A03C07 /* ClassicMovies 2.xcdatamodel */,
 				65AD2B02200220E300567F60 /* ClassicMovies.xcdatamodel */,
 			);
-			currentVersion = 65AD2B02200220E300567F60 /* ClassicMovies.xcdatamodel */;
+			currentVersion = 65502CE82004C97300A03C07 /* ClassicMovies 2.xcdatamodel */;
 			path = ClassicMovies.xcdatamodeld;
 			sourceTree = "<group>";
 			versionGroupType = wrapper.xcdatamodel;

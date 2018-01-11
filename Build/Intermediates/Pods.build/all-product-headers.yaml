@@ -4,7 +4,7 @@
   'roots': [
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework/Headers",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -34,7 +34,7 @@
         {
           'type': 'file',
           'name': "AFNetworking-Swift.h",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework/Headers/AFNetworking-Swift.h"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Headers/AFNetworking-Swift.h"
         },
         {
           'type': 'file',
@@ -110,23 +110,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/AFNetworking/AFNetworking.framework/Modules",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/AFNetworking/AFNetworking.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphoneos/AFNetworking.build/module.modulemap"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphonesimulator/AFNetworking.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.framework/Headers",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "ISO8601DateFormatterValueTransformer-Swift.h",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.framework/Headers/ISO8601DateFormatterValueTransformer-Swift.h"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.framework/Headers/ISO8601DateFormatterValueTransformer-Swift.h"
         },
         {
           'type': 'file',
@@ -147,18 +147,200 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.framework/Modules",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/ISO8601DateFormatterValueTransformer/ISO8601DateFormatterValueTransformer.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphoneos/ISO8601DateFormatterValueTransformer.build/module.modulemap"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphonesimulator/ISO8601DateFormatterValueTransformer.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/Pods_ClassicMovies.framework/Headers",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "MagicalImportFunctions.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/DataImport/MagicalImportFunctions.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+Actions.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+Actions.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+ErrorHandling.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+ErrorHandling.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+Options.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+Options.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+Setup.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+Setup.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+ShorthandMethods.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+ShorthandMethods.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord+iCloud.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Core/MagicalRecord+iCloud.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord-Swift.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Headers/MagicalRecord-Swift.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord-umbrella.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/Target Support Files/MagicalRecord/MagicalRecord-umbrella.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecord.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordDeprecationMacros.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Core/MagicalRecordDeprecationMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordInternal.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Core/MagicalRecordInternal.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordLogging.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Core/MagicalRecordLogging.h"
+        },
+        {
+          'type': 'file',
+          'name': "MagicalRecordXcode7CompatibilityMacros.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Core/MagicalRecordXcode7CompatibilityMacros.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSAttributeDescription+MagicalDataImport.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSAttributeDescription+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSEntityDescription+MagicalDataImport.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSEntityDescription+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalAggregation.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalAggregation.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalDataImport.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalFinders.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalFinders.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalRecord.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObject+MagicalRequests.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObject/NSManagedObject+MagicalRequests.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalChainSave.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalChainSave.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalObserving.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalObserving.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalRecord.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalSaves.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalSaves.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectContext+MagicalThreading.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectContext/NSManagedObjectContext+MagicalThreading.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSManagedObjectModel+MagicalRecord.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSManagedObjectModel+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSNumber+MagicalDataImport.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSNumber+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSObject+MagicalDataImport.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSObject+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSPersistentStore+MagicalRecord.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSPersistentStore+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSPersistentStoreCoordinator+MagicalRecord.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/NSPersistentStoreCoordinator+MagicalRecord.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSRelationshipDescription+MagicalDataImport.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSRelationshipDescription+MagicalDataImport.h"
+        },
+        {
+          'type': 'file',
+          'name': "NSString+MagicalDataImport.h",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Pods/MagicalRecord/MagicalRecord/Categories/DataImport/NSString+MagicalDataImport.h"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/MagicalRecord/MagicalRecord.framework/Modules",
+      'contents': [
+        {
+          'type': 'file',
+          'name': "module.modulemap",
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphonesimulator/MagicalRecord.build/module.modulemap"
+        }
+      ]
+    },
+    {
+      'type': 'directory',
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/Pods_ClassicMovies.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -168,24 +350,24 @@
         {
           'type': 'file',
           'name': "Pods_ClassicMovies-Swift.h",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/Pods_ClassicMovies.framework/Headers/Pods_ClassicMovies-Swift.h"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/Pods_ClassicMovies.framework/Headers/Pods_ClassicMovies-Swift.h"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/Pods_ClassicMovies.framework/Modules",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/Pods_ClassicMovies.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphoneos/Pods-ClassicMovies.build/module.modulemap"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphonesimulator/Pods-ClassicMovies.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/PureLayout/PureLayout.framework/Headers",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -210,7 +392,7 @@
         {
           'type': 'file',
           'name': "PureLayout-Swift.h",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/PureLayout/PureLayout.framework/Headers/PureLayout-Swift.h"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Headers/PureLayout-Swift.h"
         },
         {
           'type': 'file',
@@ -231,23 +413,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/PureLayout/PureLayout.framework/Modules",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/PureLayout/PureLayout.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphoneos/PureLayout.build/module.modulemap"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphonesimulator/PureLayout.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/RKValueTransformers/RKValueTransformers.framework/Headers",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RKValueTransformers/RKValueTransformers.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "RKValueTransformers-Swift.h",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/RKValueTransformers/RKValueTransformers.framework/Headers/RKValueTransformers-Swift.h"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RKValueTransformers/RKValueTransformers.framework/Headers/RKValueTransformers-Swift.h"
         },
         {
           'type': 'file',
@@ -263,18 +445,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/RKValueTransformers/RKValueTransformers.framework/Modules",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RKValueTransformers/RKValueTransformers.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphoneos/RKValueTransformers.build/module.modulemap"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphonesimulator/RKValueTransformers.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/RestKit/RestKit.framework/Headers",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -634,7 +816,7 @@
         {
           'type': 'file',
           'name': "RestKit-Swift.h",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/RestKit/RestKit.framework/Headers/RestKit-Swift.h"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Headers/RestKit-Swift.h"
         },
         {
           'type': 'file',
@@ -680,23 +862,23 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/RestKit/RestKit.framework/Modules",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/RestKit/RestKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphoneos/RestKit.build/module.modulemap"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphonesimulator/RestKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/SOCKit/SOCKit.framework/Headers",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/SOCKit/SOCKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
           'name': "SOCKit-Swift.h",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/SOCKit/SOCKit.framework/Headers/SOCKit-Swift.h"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/SOCKit/SOCKit.framework/Headers/SOCKit-Swift.h"
         },
         {
           'type': 'file',
@@ -712,18 +894,18 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/SOCKit/SOCKit.framework/Modules",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/SOCKit/SOCKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphoneos/SOCKit.build/module.modulemap"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphonesimulator/SOCKit.build/module.modulemap"
         }
       ]
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/TransitionKit/TransitionKit.framework/Headers",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/TransitionKit/TransitionKit.framework/Headers",
       'contents': [
         {
           'type': 'file',
@@ -748,7 +930,7 @@
         {
           'type': 'file',
           'name': "TransitionKit-Swift.h",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/TransitionKit/TransitionKit.framework/Headers/TransitionKit-Swift.h"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/TransitionKit/TransitionKit.framework/Headers/TransitionKit-Swift.h"
         },
         {
           'type': 'file',
@@ -764,12 +946,12 @@
     },
     {
       'type': 'directory',
-      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphoneos/TransitionKit/TransitionKit.framework/Modules",
+      'name': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Products/Debug-iphonesimulator/TransitionKit/TransitionKit.framework/Modules",
       'contents': [
         {
           'type': 'file',
           'name': "module.modulemap",
-          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphoneos/TransitionKit.build/module.modulemap"
+          'external-contents': "/Users/adithyareddy/Desktop/ClassicMovies/Build/Intermediates/Pods.build/Debug-iphonesimulator/TransitionKit.build/module.modulemap"
         }
       ]
     }
