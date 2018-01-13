@@ -25,7 +25,7 @@ public class BaseOperation: NSObject {
         objectManager.managedObjectStore = store
         objectManager.requestSerializationMIMEType = RKMIMETypeJSON
         NSPersistentStoreCoordinator.mr_setDefaultStoreCoordinator(store.persistentStoreCoordinator)
-        NSManagedObjectContext.mr_rootSaving()
+        //NSManagedObjectContext.mr_rootSaving()
         //NSManagedObjectContext.mr_resetDefaultContext()
         self.setDefaultDateFormatter()
         return objectManager
@@ -35,7 +35,7 @@ public class BaseOperation: NSObject {
         
         let store:RKManagedObjectStore = RKManagedObjectStore(managedObjectModel: model)
         store.createPersistentStoreCoordinator()
-        let storePath = NSURL(fileURLWithPath: NSTemporaryDirectory()).appendingPathComponent("UCCustomer.sqlite")?.path
+        let storePath = RKApplicationDataDirectory().stringByAppendingPathComponent(path: "ClassicMovies.sqlite")
         do {
             try store.addSQLitePersistentStore(atPath: storePath,
                                                fromSeedDatabaseAtPath: nil, withConfiguration: nil, options: nil)
@@ -60,6 +60,40 @@ public class BaseOperation: NSObject {
         RKValueTransformer.defaultValueTransformer().insert(dateFormatter, at: 0)
     }
     
+}
+
+extension String {
+    func stringByAppendingPathComponent1(path: String) -> String {
+        let nsSt = self as NSString
+        return nsSt.appendingPathComponent(path)
+    }
+}
+
+extension String {
+    
+    var lastPathComponent: String {
+        return (self as NSString).lastPathComponent
+    }
+    var pathExtension: String {
+        return (self as NSString).pathExtension
+    }
+    var stringByDeletingLastPathComponent: String {
+        return (self as NSString).deletingLastPathComponent
+    }
+    var stringByDeletingPathExtension: String {
+        return (self as NSString).deletingPathExtension
+    }
+    var pathComponents: [String] {
+        return (self as NSString).pathComponents
+    }
+    func stringByAppendingPathComponent(path: String) -> String {
+        let nsSt = self as NSString
+        return nsSt.appendingPathComponent(path)
+    }
+    func stringByAppendingPathExtension(ext: String) -> String? {
+        let nsSt = self as NSString
+        return nsSt.appendingPathExtension(ext)
+    }
 }
 
 class CMRKObjectManager: RKObjectManager {

@@ -13,3 +13,11 @@ struct NetworkConstants {
     static let discoverPopularMoviesApiPath: String = "/3/discover/movie"
     static let baseUrl: String = "https://api.themoviedb.org"
 }
+
+struct ImageConstants {
+    static let IMDBImageBaseUrl: String = "https://image.tmdb.org/t/p/w500"
+}
+
+func getFullImagePath(id: String) -> String {
+    return ImageConstants.IMDBImageBaseUrl + id
+}

@@ -15,5 +15,6 @@
 @import CoreData;
 @import RestKit;
 @import MagicalRecord;
+@import SDWebImage;
 
 #endif /* Bridging_header_h */

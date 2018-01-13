@@ -23,18 +23,22 @@ class MovieFeedOperation: BaseOperation, MovieFeedOperationProtocol {
         self.objectManager.addResponseDescriptor(responseDescriptor)
     }
     
-    func getMovieFeed(onSuccess successBlock: @escaping ((_ feed: CMFeed) -> Void), onError errorBlock: @escaping ((NSError, Int) -> Void)) {
-        
+    func getMovieFeed(page: Int, onSuccess successBlock: @escaping ((_ feed: CMFeed) -> Void), onError errorBlock: @escaping ((NSError, Int) -> Void)) {
+        let finalPath = self.path + "&page=\(page)"
         let request = self.objectManager.request(with: nil,
-                                                 method: RKRequestMethod.GET, path: self.path, parameters: nil)
+                                                 method: RKRequestMethod.GET, path: finalPath, parameters: nil)
         
         self.feedOperation = self.objectManager.managedObjectRequestOperation(with: request! as URLRequest,
-            managedObjectContext: self.objectManager.managedObjectStore.mainQueueManagedObjectContext,
+            managedObjectContext: NSManagedObjectContext.mr_default(),
             success: { (operation, result) -> Void in
             if let feed = result?.firstObject as? CMFeed {
+                
+            self.saveChangesToManagedObjectContext(NSManagedObjectContext.mr_default())
+                
                 if let _ = feed.results?.allObjects as? [CMMovie] {
                     successBlock(feed)
                 }
+                
             }
         }, failure: { (operation, error) -> Void in
             if let error = error {
@@ -51,5 +55,14 @@ class MovieFeedOperation: BaseOperation, MovieFeedOperationProtocol {
         self.feedOperation?.queuePriority = .veryHigh
         self.objectManager.enqueue(self.feedOperation)
         
+    }
+    
+    func saveChangesToManagedObjectContext(_ managedObjectContext: NSManagedObjectContext?) {
+        do {
+            try managedObjectContext?.saveToPersistentStore()
+        }
+        catch {
+            print(error)
+        }
     }
 }
