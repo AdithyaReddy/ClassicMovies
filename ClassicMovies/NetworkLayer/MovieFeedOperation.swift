@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MovieFeedOperation: BaseOperation, MovieFeedOperationProtocol {
+class MovieFeedOperation: BaseOperation {
     
     var path: String = ""
     var feedOperation: RKObjectRequestOperation?
@@ -19,10 +19,14 @@ class MovieFeedOperation: BaseOperation, MovieFeedOperationProtocol {
         
         let feedMapping = CMFeed.createMapping(store: self.objectManager.managedObjectStore)
         
+        NSManagedObjectContext.mr_default().mergePolicy = NSMergeByPropertyObjectTrumpMergePolicy
+        
         let responseDescriptor = RKResponseDescriptor(mapping: feedMapping , method: RKRequestMethod.GET, pathPattern: NetworkConstants.discoverPopularMoviesApiPath, keyPath: "feed", statusCodes: IndexSet(integer: 200))
         self.objectManager.addResponseDescriptor(responseDescriptor)
     }
-    
+}
+
+extension MovieFeedOperation: MovieFeedOperationProtocol {
     func getMovieFeed(page: Int, onSuccess successBlock: @escaping ((_ feed: CMFeed) -> Void), onError errorBlock: @escaping ((NSError, Int) -> Void)) {
         let finalPath = self.path + "&page=\(page)"
         let request = self.objectManager.request(with: nil,

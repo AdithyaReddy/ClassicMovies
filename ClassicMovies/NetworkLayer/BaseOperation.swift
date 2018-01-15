@@ -62,47 +62,4 @@ public class BaseOperation: NSObject {
     
 }
 
-extension String {
-    func stringByAppendingPathComponent1(path: String) -> String {
-        let nsSt = self as NSString
-        return nsSt.appendingPathComponent(path)
-    }
-}
 
-extension String {
-    
-    var lastPathComponent: String {
-        return (self as NSString).lastPathComponent
-    }
-    var pathExtension: String {
-        return (self as NSString).pathExtension
-    }
-    var stringByDeletingLastPathComponent: String {
-        return (self as NSString).deletingLastPathComponent
-    }
-    var stringByDeletingPathExtension: String {
-        return (self as NSString).deletingPathExtension
-    }
-    var pathComponents: [String] {
-        return (self as NSString).pathComponents
-    }
-    func stringByAppendingPathComponent(path: String) -> String {
-        let nsSt = self as NSString
-        return nsSt.appendingPathComponent(path)
-    }
-    func stringByAppendingPathExtension(ext: String) -> String? {
-        let nsSt = self as NSString
-        return nsSt.appendingPathExtension(ext)
-    }
-}
-
-class CMRKObjectManager: RKObjectManager {
-    override open func getObject(_ object: Any!, path: String!, parameters: [AnyHashable : Any]!, success: ((RKObjectRequestOperation?, RKMappingResult?) -> Void)!, failure: ((RKObjectRequestOperation?, Error?) -> Void)!) {
-        
-        super.getObject(object, path: path, parameters: parameters, success: { (operation, result) in
-            success(operation, result)
-        }, failure: { (operation, error) in
-            failure(operation, error)
-        })
-    }
-}

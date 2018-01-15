@@ -18,12 +18,10 @@ class MoviesFeedViewController: UIViewController {
         tableView.autoPinEdgesToSuperviewEdges()
         return tableView
     }()
-    
     fileprivate lazy var movieFeedOperation: MovieFeedOperationProtocol? = {
        let movieFeedOperation = MovieFeedOperation()
         return movieFeedOperation
     }()
-    
     fileprivate var feed: CMFeed?
     fileprivate lazy var dataSource: [CMMovie]? = {
         let movies = CMMovie.mr_findAll()
@@ -31,7 +29,11 @@ class MoviesFeedViewController: UIViewController {
     }()
     fileprivate var currentPageNumber: Int = 1
     fileprivate var expandedMovies: [CMMovie] = []
-    var descriptionTableViewCell: DescriptionTableViewCell!
+    fileprivate var descriptionTableViewCellSizingCell: DescriptionTableViewCell!
+    fileprivate struct Constants {
+        static let rowHeight: CGFloat = 50
+        static let headerHeight: CGFloat = 200
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -63,7 +65,7 @@ class MoviesFeedViewController: UIViewController {
     }
     
     func registerXIBs() {
-        descriptionTableViewCell = Bundle.main.loadNibNamed(DescriptionTableViewCell.cellIdentifier, owner: self, options: nil)![0] as? DescriptionTableViewCell
+        descriptionTableViewCellSizingCell = Bundle.main.loadNibNamed(DescriptionTableViewCell.cellIdentifier, owner: self, options: nil)![0] as? DescriptionTableViewCell
         moviesListTableView.register(UINib(nibName: TitleDescTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: TitleDescTableViewCell.cellIdentifier)
         moviesListTableView.register(UINib(nibName: DescriptionTableViewCell.cellIdentifier, bundle: nil), forCellReuseIdentifier: DescriptionTableViewCell.cellIdentifier)
         moviesListTableView.register(UINib(nibName: MovieThumbnailHeaderView.cellIdentifier, bundle: nil), forHeaderFooterViewReuseIdentifier: MovieThumbnailHeaderView.cellIdentifier)
@@ -142,7 +144,7 @@ extension MoviesFeedViewController: UITableViewDataSource {
     }
     
     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-        return 200
+        return Constants.headerHeight
     }
     
     func tableView(_ tableView: UITableView, heightForFooterInSection section: Int) -> CGFloat {
@@ -153,15 +155,15 @@ extension MoviesFeedViewController: UITableViewDataSource {
         if let movie = checkIfMovieIsExpanded(in: indexPath.section) {
             switch movie.itemsAvailable[indexPath.row] {
                 case .Overview:
-                    descriptionTableViewCell.frame.size.width = UIScreen.main.bounds.width
-                    descriptionTableViewCell.bindDataModel(model: movie.overview as AnyObject)
-                    descriptionTableViewCell.setNeedsLayout()
-                    descriptionTableViewCell.layoutIfNeeded()
-                    return descriptionTableViewCell.intrinsicContentSize.height
+                    descriptionTableViewCellSizingCell.frame.size.width = UIScreen.main.bounds.width
+                    descriptionTableViewCellSizingCell.bindDataModel(model: movie.overview as AnyObject)
+                    descriptionTableViewCellSizingCell.setNeedsLayout()
+                    descriptionTableViewCellSizingCell.layoutIfNeeded()
+                    return descriptionTableViewCellSizingCell.intrinsicContentSize.height
                 case .OriginalLang:
-                    return 50
+                    return Constants.rowHeight
                 case .Popularity:
-                    return 50
+                    return Constants.rowHeight
             }
         }
         return 0

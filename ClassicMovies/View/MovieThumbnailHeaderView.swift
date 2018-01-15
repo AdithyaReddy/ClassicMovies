@@ -47,7 +47,7 @@ class MovieThumbnailHeaderView: UITableViewHeaderFooterView {
         tapGesture.numberOfTapsRequired = 1
         self.isUserInteractionEnabled = true
         self.addGestureRecognizer(tapGesture)
-        //self.dropdownImageView.transform = .identity
+        //dropdownImageView.transform = .identity
     }
     
     func tapGestureAction() {
